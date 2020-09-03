@@ -1,38 +1,627 @@
-.App {
+/* Available Fonts
+font-family: 'Amatic SC', cursive;
+font-family: 'Chathura', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Walter Turncoat', cursive;
+*/
+
+#navbar{
+  background-color:rgba(0,0,0,0.7);
+  font-family: 'Amatic SC', cursive;
+  font-size: 20vw;
+}
+
+body{
+  background-color: black;
+}
+
+.background-video{
+  position: absolute;
+  width: 100%;
+  height: 110vh;
+  object-fit: fill;
+  z-index: -1;
+  left: 0;
+  top: -10vh;
+}
+
+/*-------------------- Landing Page ----------------------*/
+#my_pic{
+  height: 15vw;
+  width: 15vw;
+  position: absolute;
+  top: 30%;
+  left: 42.5vw;
+  animation-name: landing_page_1;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes landing_page_1{
+  50%   { top: 12.5%; left: 42.5vw; }
+  100%  { top: 12.5%; left: 7.5vw; }
+}
+
+#spinner1{
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  top: 65vh;
+  left: 48.5vw;
+  animation-name: landing_page_2;
+  animation-duration: 0.1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes landing_page_2{
+  100%  { top: -50vh; }
+}
+
+#animation{
+  z-index: 1;
+  background-color: black;
+  animation-name: landing_page;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes landing_page{
+  50%     { width: 100vw; margin-right: 0; margin-left: 0; height: 42vh; margin-top: 35vh; background-color: black; }
+  100%    { width: 30vw; margin-right: 70vw; margin-left: 0; height: 42vh; margin-top: 35vh; }
+}
+
+#some_text{
+  color: transparent;
+  position: absolute;
+  top: -10vh;
+  background: rgba(0, 0, 0, 0.7);
+  width: 0vw;
+  margin-left: 30vw;
+  height: 42vh;
+  margin-top: 35vh;
+  animation-name: text_box;
+  animation-delay: 9s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes text_box{
+  50%  { width: 70vw; color: transparent; }
+  100%  { width: 70vw; color: white; }
+}
+
+.traits{
+  font-family: 'Lobster', cursive;
+  font-size: 3vw;
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+}
+
+#coder{
+  color:transparent;
+  font-size: 2vw;
+  font-family: 'Amatic SC', cursive;
+  top: 20vh;
+  animation-name: coder;
+  animation-duration: 1s;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+}
+@keyframes coder{
+  from  {left: 90vw; color: transparent}
+  to    {left: 5vh; color: white}
+}
+
+
+#player{
+  color:transparent;
+  font-size: 2vw;
+  font-family: 'Amatic SC', cursive;
+  top: 25vh;
+  animation-name: player;
+  animation-duration: 1s;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
+}
+@keyframes player{
+  from  {left: 90vw; color: transparent}
+  to    {left: 5vh; color: white}
+}
+
+
+#genius{
+  color:transparent;
+  font-size: 2vw;
+  font-family: 'Amatic SC', cursive;
+  top: 30vh;
+  animation-name: genius;
+  animation-duration: 1s;
+  animation-delay: 14s;
+  animation-fill-mode: forwards;
+}
+@keyframes genius{
+  from  {left: 90vw; color: transparent}
+  to    {left: 5vh; color: white}
+}
+
+
+#hide{
+  color:transparent;
+  font-size: 2vw;
+  font-family: 'Amatic SC', cursive;
+  top: 35vh;
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+@keyframes hide{
+  from  {left: 90vw; color: transparent}
+  to    {left: 5vh; color: white}
+}
+
+/* ---------------------- About Me Page ------------------------ */
+#id_card, #contact_card{
+  /* background-color:rgba(0,0,0,0.7); */
+  background-image: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 55%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%);
+  font-family: 'Chathura', sans-serif;
+  font-size: 10vh;
+  position: absolute;
+  width: 70vw;
+  height: 75vh;
+  left: 15vw;
+  border-radius: 10px;
+  z-index: 0;
+  top: 7vh;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#beautiful_me{
+  height: width;
+  width: 22%;
+  position: absolute;
+  top: 5vh;
+  left: 40%;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.about_text{
+  position: relative;
+  top: 60%;
+  font-family: 'Chathura', sans-serif;
+  font-size: 8vh;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#about2{
+  font-size: 6vh;
+}
+#about3{
+  font-size: 4vh;
+  width: 86%;
+  left: 7%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/**************************** Resume Page ******************************/
+.resume-tab{
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  border-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+#tababo{
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+}
+
+/* -----------SFU CARD--------------- */
+#SFU-card{
+  position: absolute;
+  top: 20vh;
+  left: 55vw;
+  width: 30vw;
+  height: 50vh;
+  font-family: 'Chathura', sans-serif;
+  background-color: transparent;
+}
+#sfu-title{
+  background-image: url('./Components/Images/sfu.jpg');
+  background-size: cover;
+  color: white;
+  height: 30vh;
+  font-family: 'Lobster', cursive;
+}
+#sfu-text{
+  background: #ed213a;
+  background: -webkit-linear-gradient(#dd1818, #000000);
+  background: linear-gradient(#dd1818, #000000);
+  width: 100%;
+  height: 20vh;
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+  line-height: 3vh;
+}
+
+/* -------------BCIT CARD------------- */
+#BCIT-card{
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+  width: 30vw;
+  height: 50vh;
+  font-family: 'Chathura', sans-serif;
+  background-color: transparent;
+}
+#bcit-title{
+  background-image: url('./Components/Images/bcit.jpg');
+  background-size: cover;
+  color: white;
+  height: 30vh;
+  font-family: 'Lobster', cursive;
+}
+#bcit-text{
+  background: -webkit-linear-gradient(#021b79, #000000);
+  background: linear-gradient(#021b79, #000000);
+  width: 100%;
+  height: 20vh;
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+  line-height: 3vh;
+}
+
+/* -------------Work Cards------------ */
+#Microserve-card, #Mohsen-card, #CAF-card, #downres-card{
+  position: absolute;
+  top: 20vh;
+  left: 7.5vw;
+  width: 25vw;
+  height: 50vh;
+  font-family: 'Chathura', sans-serif;
+  background-color: transparent;
+}
+#Mohsen-card{
+  left: 37.5vw;
+}
+#Microserve-card{
+  left: 67.5vw;
+}
+#downres-card{
+  top: 20vh;
+  left: 37.5vw;
+}
+
+
+/* ---------------Card Title Boxes-------------- */
+#caf-title, #microserve-title, #mohsen-title, #downres-title, #canvas-title, #portfolio-title, #monty-title, #router-title{
+  background-image: url('./Components/Images/caf.png');
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+#microserve-title{
+  background-image: url('./Components/Images/microserve.png');
+}
+#mohsen-title{
+  background-image: url('./Components/Images/AutoMo.png');
+  background-color: #232323;
+}
+#canvas-title{
+  background-image: url('./Components/Images/Canvas.PNG');
+}
+#downres-title{
+  background-image: url("./Components/Images/resume.PNG");
+  height: 70vh;
+}
+#portfolio-title{
+  background-image: url("./Components/Images/node2.PNG");
+  background-color: black;
+}
+#monty-title{
+  background-image: url("./Components/Images/montyhall.png");
+}
+#router-title{
+  background-image: url("./Components/Images/routerimg.PNG");
+}
+
+
+/* -------------Card Textboxes-------------- */
+#caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
+  background: -webkit-linear-gradient(#154100, #000000);
+  background: linear-gradient(#154100, #000000);
+  width: 100%;
+  height: 20vh;
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+  line-height: 3vh;
+}
+#microserve-text{
+  background: -webkit-linear-gradient(#021b79, #000000);
+  background: linear-gradient(#021b79, #000000);
+}
+#mohsen-text{
+  background: -webkit-linear-gradient(#404040, #000000);
+  background: linear-gradient(#404040, #000000);
+}
+#canvas-text{
+  background: -webkit-linear-gradient(#a73300, #000000);
+  background: linear-gradient(#a73300, #000000);
+}
+#downres-text{
+  background: -webkit-linear-gradient(#005583, #000000);
+  background: linear-gradient(#005583, #000000);
+}
+#portfolio-text{
+  background: -webkit-linear-gradient(#bb8b00, #000000);
+  background: linear-gradient(#bb8b00, #000000);
+}
+#monty-text{
+  background: -webkit-linear-gradient(#920202, #000000);
+  background: linear-gradient(#920202, #000000);
+}
+#router-text{
+  background: -webkit-linear-gradient(#414345, #000000);
+  background: linear-gradient(#414345, #000000);
+}
+
+/* -------------- Hobbies ----------------*/
+.hobbies{
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4vh;
+  position: absolute;
+  top: 15vh;
+  width: 85vw;
+  left: 7.5vw;
+}
+
+/*********************************** Skills Page *************************************/
+#skills{
+  width: 70vw;
+  height: 60vh;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+  text-align: center;
+}
+.language-chip, .tool-chip, .software-chip{
+  margin-right: 1em;
+  padding-right: 1em;
+}
+
+@keyframes fade-out{
+  to    { opacity: 0; }
+}
+@keyframes fade-in{
+  from  { opacity: 0; }
+  to    { opacity: 1; }
+}
+
+
+/*************************************** Projects Page ********************************/
+
+#Microserve-card1, #Mohsen-card1, #CAF-card1, #downres-card1{
+  position: absolute;
+  top: 20vh;
+  left: 7.5vw;
+  width: 25vw;
+  height: 60vh;
+  font-family: 'Chathura', sans-serif;
+  background-color: transparent;
+}
+#Mohsen-card1{
+  left: 37.5vw;
+}
+#Microserve-card1{
+  left: 67.5vw;
+}
+
+/****************************** Contact Page **************************************/
+#contact-div{
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+}
+.contact_icons{
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  background-image: url('./Components/Images/github.png');
+  background-size: cover;
+  background-color: white;
+  position: absolute;
+  left: 20.5vw;
+  top: 1vh;
+}
+#actual_contact{
+  position: absolute;
+  top: 92%;
+  height: 10vh;
+  width: 100%;
+  font-size: 5vh;
+}
+#phone_icon{
+  background-image: url('./Components/Images/phone.png');
+  left: 26.6vw;
+}
+#email_icon{
+  background-image: url('./Components/Images/email.png');
+  left: 32.6vw;
+}
+#linkedin_icon{
+  background-image: url('./Components/Images/linkedin.png');
+  left: 38.6vw;
+}
+#skype_icon{
+  background-image: url('./Components/Images/skype.png');
+  left: 44.6vw;
+}
+
+
+
+/*****************************************************************************************
+******************************************************************************************
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+******************************************************************************************
+******************************************************************************************/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .background-video{
+    object-fit: cover;
   }
-  to {
-    transform: rotate(360deg);
+
+  #navbar{
+    position: absolute;
+    top: 30vh;
+  }
+  
+  body{
+    background-color: black;
+  }
+  
+  /*-------------------- Landing Page ----------------------*/
+  #my_pic{
+    height: 15vw;
+    width: 15vw;
+    position: absolute;
+    top: 30%;
+    left: 42.5vw;
+    animation-name: landing_page_1;
+    animation-delay: 5s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes landing_page_1{
+    50%   { top: 12.5%; left: 42.5vw; }
+    100%  { top: 12.5%; left: 7.5vw; }
+  }
+  
+  #spinner1{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    top: 65vh;
+    left: 48.5vw;
+    animation-name: landing_page_2;
+    animation-duration: 0.1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes landing_page_2{
+    100%  { top: -50vh; }
+  }
+  
+  #animation{
+    z-index: 1;
+    background-color: black;
+    animation-name: landing_page;
+    animation-delay: 5s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes landing_page{
+    50%     { width: 100vw; margin-right: 0; margin-left: 0; height: 42vh; margin-top: 35vh; background-color: black; }
+    100%    { width: 30vw; margin-right: 70vw; margin-left: 0; height: 42vh; margin-top: 35vh; }
+  }
+  
+  #some_text{
+    color: transparent;
+    position: absolute;
+    top: -10vh;
+    background: rgba(0, 0, 0, 0.7);
+    width: 0vw;
+    margin-left: 30vw;
+    height: 42vh;
+    margin-top: 35vh;
+    animation-name: text_box;
+    animation-delay: 9s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes text_box{
+    50%  { width: 70vw; color: transparent; }
+    100%  { width: 70vw; color: white; }
+  }
+  
+  .traits{
+    font-family: 'Lobster', cursive;
+    font-size: 3vw;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+  }
+  
+  #coder{
+    color:transparent;
+    font-size: 2vw;
+    font-family: 'Amatic SC', cursive;
+    top: 20vh;
+    animation-name: coder;
+    animation-duration: 1s;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes coder{
+    from  {left: 90vw; color: transparent}
+    to    {left: 5vh; color: white}
+  }
+  
+  
+  #player{
+    color:transparent;
+    font-size: 2vw;
+    font-family: 'Amatic SC', cursive;
+    top: 25vh;
+    animation-name: player;
+    animation-duration: 1s;
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes player{
+    from  {left: 90vw; color: transparent}
+    to    {left: 5vh; color: white}
+  }
+  
+  
+  #genius{
+    color:transparent;
+    font-size: 2vw;
+    font-family: 'Amatic SC', cursive;
+    top: 30vh;
+    animation-name: genius;
+    animation-duration: 1s;
+    animation-delay: 14s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes genius{
+    from  {left: 90vw; color: transparent}
+    to    {left: 5vh; color: white}
+  }
+  
+  
+  #hide{
+    color:transparent;
+    font-size: 2vw;
+    font-family: 'Amatic SC', cursive;
+    top: 35vh;
+    animation-name: hide;
+    animation-duration: 1s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hide{
+    from  {left: 90vw; color: transparent}
+    to    {left: 5vh; color: white}
   }
 }
