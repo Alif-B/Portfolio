@@ -4,6 +4,10 @@ import { Layout, Header, Navigation, Content } from 'react-mdl';
 import Router from './Components/route';
 import Waves from './Components/Images/waves.mp4';
 import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import Mobile_nav from './Components/mobile_nav';
+
+
 
 function App() {
   return (
@@ -22,6 +26,8 @@ function App() {
                 <a href="/contacts">Contacts</a>
             </Navigation>
         </Header>
+
+        <Mobile_nav id='mobile_nav'/>
 
         <Content>
             <div className="page-content" />

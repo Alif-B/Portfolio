@@ -16,7 +16,7 @@ class Resume extends Component{
                     <Card id='SFU-card' shadow={10}>
                         <CardTitle id='sfu-title'> </CardTitle>
                         <CardText id='sfu-text'>
-                            <p style={{fontSize: '6vh'}}> Simon Fraser University </p>
+                            <p className='school_cards'> Simon Fraser University </p>
                             Faculty of Applied Sciences <br/>
                             Computer Enginnering <br/>
                             September 2015 - April 2018 
@@ -25,7 +25,7 @@ class Resume extends Component{
                     <Card id='BCIT-card' shadow={10}>
                         <CardTitle id='bcit-title'> </CardTitle>
                         <CardText id='bcit-text'> 
-                            <p style={{fontSize: '6vh'}}>British Columbia Institute of Technology </p>
+                            <p className='school_cards'>British Columbia Institute of Technology </p>
                             Computer Information Technology (C.I.T) <br/>
                             September 2019 - April 2021 <br/>
                             Graduation Date: April 2021
@@ -107,7 +107,7 @@ class Resume extends Component{
             return(
                 <div className='hobbies'>
                     I am a man of many hobbies. So enjoy this wordcloud!
-                    <ReactWordcloud words={words} options={options} style={{position: 'absolute', top: '10vh'}} />
+                    <ReactWordcloud id='wordcloud' words={words} options={options} style={{position: 'absolute', top: '10vh'}} />
                 </div>
             )
         }
@@ -134,6 +134,10 @@ class Resume extends Component{
     render(){
         return(
             <div className='resume-tab'>
+                <div id='mobile-app-bar'>
+                    <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
+                    <p className='current-page'>Resume</p>
+                </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
                     <Tab id='tababo'> Education </Tab>
                     <Tab id='tababo'> Work Experience </Tab>

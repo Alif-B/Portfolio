@@ -50,6 +50,10 @@ class Skills extends Component {
     render(){
         return(
             <div className='resume-tab'>
+                <div id='mobile-app-bar'>
+                    <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
+                    <p className='current-page'>About me</p>
+                </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
                     <Tab id='tababo'> All </Tab>
                     <Tab id='tababo'> Languages </Tab>

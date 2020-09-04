@@ -6,6 +6,9 @@ class homepage extends Component {
     render(){
         return (
             <div id='homepage'>
+                <div id='mobile-app-bar'>
+                    <a style={{textDecoration:'none'}} href='/'> <p href='/' id='homepage-alif'> Alif </p> </a>
+                </div>
                 <div className='background-video' id="animation">
                     <img id='my_pic' src={MyLogo} alt='Logo'/>
                     <Spinner id='spinner1'/>
