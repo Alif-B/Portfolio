@@ -15,11 +15,10 @@ class About extends Component {
                     <p id='about1' className='about_text'> British Columbia Institue of Technology </p>
                     <p id='about2' className='about_text'> Computer Information Technology (C.I.T) </p>
                     <p id='about3' className='about_text'>
-                        All of that is in my resume already. But I'll tell you something that is not on there.
-                        I am fascinated by ideas I don't understand thoroughly. If I can't conceive an idea, I get
-                        obsessed with that idea until such time that I can. Technology and Economy are two things 
-                        that never seizes to surprise me. It's my belief that I will never truely understand
-                        technology and modern economy. For this reason I am addicted to both.
+                        As an IT student, I am fascinated by innovative ideas related to technology and the modern economy. 
+                        I am curious about how technology and the economy relate to each other and the impact they have 
+                        on our lives. I am an avid learner in search of novel ideas and always looking to accept new 
+                        challenges in my personal and professional life. Check out my resume to learn more about me.
                     </p>
                 </div>
             </div>

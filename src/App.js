@@ -4,8 +4,7 @@ import { Layout, Header, Navigation, Content } from 'react-mdl';
 import Router from './Components/route';
 import Waves from './Components/Images/waves.mp4';
 import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import Mobile_nav from './Components/mobile_nav';
+import MobileNav from './Components/mobile_nav';
 
 
 
@@ -27,7 +26,7 @@ function App() {
             </Navigation>
         </Header>
 
-        <Mobile_nav id='mobile_nav'/>
+        <MobileNav id='mobile_nav'/>
 
         <Content>
             <div className="page-content" />
@@ -36,10 +35,6 @@ function App() {
     </Layout>
     </div>  
   );
-}
-
-function go_home(){
-  window.location.href = '/';
 }
 
 export default App;

@@ -8,7 +8,7 @@ font-family: 'Walter Turncoat', cursive;
 #navbar{
   background-color:rgba(0,0,0,0.7);
   font-family: 'Amatic SC', cursive;
-  font-size: 20vw;
+  font-size: 70vw;
 }
 #mobile_nav{
   z-index: -100;
@@ -58,10 +58,10 @@ body{
   position: absolute;
   width: 3vw;
   height: 3vw;
-  top: 65vh;
+  top: 70vh;
   left: 48.5vw;
   animation-name: landing_page_2;
-  animation-duration: 0.1s;
+  animation-duration: 0s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -328,10 +328,12 @@ body{
 }
 #canvas-title{
   background-image: url('./Components/Images/Canvas.PNG');
+  background-size: contain;
 }
 #downres-title{
   background-image: url("./Components/Images/resume.PNG");
   height: 70vh;
+  background-position: left;
 }
 #portfolio-title{
   background-image: url("./Components/Images/node2.PNG");
@@ -339,6 +341,7 @@ body{
 }
 #monty-title{
   background-image: url("./Components/Images/montyhall.png");
+  background-size: contain;
 }
 #router-title{
   background-image: url("./Components/Images/routerimg.PNG");
@@ -349,12 +352,13 @@ body{
 #caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
   background: -webkit-linear-gradient(#154100, #000000);
   background: linear-gradient(#154100, #000000);
-  width: 100%;
+  width: 94%;
   height: 20vh;
   color: white;
   font-family: 'Chathura', sans-serif;
   font-size: 4vh;
   line-height: 3vh;
+  left: 3%;
 }
 #microserve-text{
   background: -webkit-linear-gradient(#021b79, #000000);
@@ -414,7 +418,6 @@ body{
   to    { opacity: 0; }
 }
 @keyframes fade-in{
-  from  { opacity: 0; }
   to    { opacity: 1; }
 }
 
@@ -520,6 +523,7 @@ body{
     height: 6vh;
     width: 20%;
     text-align: center;
+    z-index: 100;
   }
   .current-page{
     font-family: 'Amatic SC', cursive;
@@ -539,7 +543,7 @@ body{
     visibility: visible;
     position: fixed;
     height: 8.2vh;
-    top: 92vh;
+    bottom: -1.1vh;
     width: 100.2vw;
     background-color:black;
   }
@@ -552,21 +556,22 @@ body{
 
   /*-------------------- Landing Page ----------------------*/
   #my_pic{
-    height: 56vw;
-    width: 56vw;
-    top: 40vh;
+    height: 40vw;
+    width: 40vw;
+    top: 44.5vh;
     margin: 0;
-    left: 22vw;
+    left: 30vw;
   }
   @keyframes landing_page_1{
-    50%   { top: 4vh; }
-    100%  { top: 4vh; }
+    50%   { top: 6.5vh; }
+    100%  { top: 6.5vh; }
   }
   
   #spinner1{
-    width: 4vh;
-    height: 4vh;
+    width: 8vw;
+    height: 8vw;
     top: 70vh;
+    left: 46vw;
   }
   
   @keyframes landing_page{
@@ -722,7 +727,7 @@ body{
   }
   #wordcloud{
     height: 63vh;
-    width: 85vw;
+    width: 90vw;
     background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 10vh;
   }
@@ -750,7 +755,7 @@ body{
     top: 150vh;
     margin-bottom: 10vh;
   }
-  /****************************** Contact Page **************************************/
+  /********************************** Contact Page **************************************/
   #contact-div{
     top: 65%;
     height: 20vh;
@@ -758,12 +763,10 @@ body{
   .contact_icons{
     height: 15vw;
     width: 15vw;
-    border-radius: 50%;
     left: 22%;
     top: 1vh;
   }
   #actual_contact{
-    position: absolute;
     top: 92%;
     height: 10vh;
     width: 100%;

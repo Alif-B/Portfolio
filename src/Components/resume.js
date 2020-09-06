@@ -43,6 +43,7 @@ class Resume extends Component{
                             <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
                             Infantry Solider <br/>
                             October 2018 - Present <br/>
+                            Training on descipline and is adaptable to the extreme conditions
                         </CardText>
                     </Card>
                     <Card id='Microserve-card' shadow={0}>
@@ -51,6 +52,7 @@ class Resume extends Component{
                             <p style={{fontSize: '6vh'}}> Microserve Inc </p>
                             Deployment Technician <br/>
                             June 2017 - Jan 2018 <br/>
+                            Setting up and troubleshooting computers/servers while providing technical support
                         </CardText>
                     </Card>
                     <Card id='Mohsen-card' shadow={0}>
@@ -59,6 +61,7 @@ class Resume extends Component{
                             <p style={{fontSize: '6vh'}}> AutoMo </p>
                             Website Developer <br/>
                             May 2020 - Present <br/>
+                            Building, Deploying and Maintaing a website for a client while providing ongoing support
                         </CardText>
                     </Card>
                 </div>

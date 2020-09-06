@@ -7,13 +7,20 @@ import PersonIcon from '@material-ui/icons/Person';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import BuildIcon from '@material-ui/icons/Build';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
-import { Link } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
     width: 500,
   },
 });
+
+const styles = {
+  stickToBottom: {
+    width: '100%',
+    position: 'fixed',
+    bottom: 0,
+  },
+};
 
 export default function LabelBottomNavigation() {
   const classes = useStyles();
@@ -24,7 +31,7 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation id='mobile_nav' value={value} onChange={handleChange} className={classes.root}>
+    <BottomNavigation id='mobile_nav' className={classes.stickToBottom} value={value} onChange={handleChange} className={classes.root}>
       <BottomNavigationAction href='/about' id='nav_icons' icon={<PersonIcon />} />
       <BottomNavigationAction href='/resume' id='nav_icons' icon={<ReceiptIcon />} />
       <BottomNavigationAction href='/skills' id='nav_icons' icon={<BuildIcon />} />

@@ -15,14 +15,15 @@ class Projects extends Component{
                         <CardTitle id='mohsen-title'> </CardTitle>
                         <CardText id='mohsen-text'>
                             <p style={{fontSize: '6vh'}}> AutoMo BC </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>Website for AutoMo, a car services delivery company <br/>
-                            October 2019 - Present <br/></p>
+                            <p style={{fontSize: '4vh', width: '90%'}}> Building, Deploying and Maintaing a website for a client while providing ongoing support <br/>
+                            October 2019 - Present <br/>
+                            Skills: HTML, CSS, JavaScript, PHP, SQL <br/></p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/Alif-B/AutoMo.git'>
                             <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
                         </a>
-                        <a href='https://automobc.ca' download>
+                        <a href='https://automobc.ca'>
                             <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
                         </a>
                         </CardActions>
@@ -32,13 +33,14 @@ class Projects extends Component{
                         <CardText id='canvas-text'> 
                             <p style={{fontSize: '6vh'}}> Colaborative Canvas </p>
                             <p style={{fontSize: '4vh', width: '90%'}}>A social media platform for pixel artists <br/>
-                            April 2020 - June 2020 <br/></p>
+                            April 2020 - June 2020 <br/>
+                            Skills: Python, Peewee ORM, Flask Web Framework, SQLite Database, Travis Continious Integration, Git Workflow, Agile Development Method  </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/crockk/collaborative-canvas.git'>
                             <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
                         </a>
-                        <a href='https://acit2911-canvas.herokuapp.com/' download>
+                        <a href='https://acit2911-canvas.herokuapp.com/'>
                             <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
                         </a>
                         </CardActions>
@@ -48,13 +50,14 @@ class Projects extends Component{
                         <CardText id='portfolio-text'> 
                             <p style={{fontSize: '6vh'}}> Portfolio </p>
                             <p style={{fontSize: '4vh', width: '90%'}}>This beautiful piece of art right here <br/>
-                            June 2020 - Present <br/></p>
+                            June 2020 - Present <br/>
+                            Skills: React, HTML, CSS, Vanilla JS, GitHub, Material UI, React MDL </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='#'>
+                        <a href='https://github.com/Alif-B/Portfolio'>
                             <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
                         </a>
-                        <a href='#' download>
+                        <a href='/'>
                             <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
                         </a>
                         </CardActions>
@@ -70,14 +73,12 @@ class Projects extends Component{
                         <CardText id='caf-text'>
                             <p style={{fontSize: '6vh'}}> Soldier Deployment </p>
                             <p style={{fontSize: '4vh', width: '90%'}}>A python based software that helps track soldier deployments locations and status <br/>
-                            January 2020 - April 2020 <br/></p>
+                            January 2020 - April 2020 <br/>
+                            Skills: Python, Peewee ORM, SQLite DB, Test Driven Development, Flask RESTful API, Postman </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/Alif-B/Soldier-Management.git'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='#' download>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
+                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
                         </a>
                         </CardActions>
                     </Card>
@@ -86,14 +87,12 @@ class Projects extends Component{
                         <CardText id='monty-text'> 
                             <p style={{fontSize: '6vh'}}> Monty Hall Problem Simulaton </p>
                             <p style={{fontSize: '4vh', width: '90%'}}>An RLab experiment that runs the monty hall problem a set number of times <br/>
-                            February 2020 - March 2020 <br/></p>
+                            February 2020 - March 2020 <br/>
+                            Skills: Problem Solving, RLab </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='#'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='#' download>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
+                        <a href='https://github.com/Alif-B/MontyHall'>
+                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
                         </a>
                         </CardActions>
                     </Card>
@@ -102,14 +101,12 @@ class Projects extends Component{
                         <CardText id='router-text'> 
                             <p style={{fontSize: '6vh'}}> Router </p>
                             <p style={{fontSize: '4vh', width: '90%'}}>A fully functional router for Virtual Machine networks built by modifying CentOS Linux operating system<br/>
-                            January 2020 - April 2020 <br/></p>
+                            January 2020 - April 2020 <br/>
+                            Skills: VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='#'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='#' download>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
+                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored> Not Applicable </Button>
                         </a>
                         </CardActions>
                     </Card>
