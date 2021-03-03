@@ -123,8 +123,8 @@ class Projects extends Component{
                     <p className='current-page'>About me</p>
                 </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
-                    <Tab id='tababo'> Web Projects </Tab>
-                    <Tab id='tababo'> Local Projects</Tab>
+                    <Tab id='tababo'> Cloud </Tab>
+                    <Tab id='tababo'> Local </Tab>
                 </Tabs>
                 <section>
                     <div className='content'>{this.toggleCategories()}</div>

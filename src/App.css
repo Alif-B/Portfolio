@@ -4,7 +4,6 @@ font-family: 'Chathura', sans-serif;
 font-family: 'Lobster', cursive;
 font-family: 'Walter Turncoat', cursive;
 */
-
 #navbar{
   background-color:rgba(0,0,0,0.7);
   font-family: 'Amatic SC', cursive;
@@ -25,6 +24,8 @@ font-family: 'Walter Turncoat', cursive;
 
 body{
   background-color: black;
+  background-image: url('./Components/Images/computer_bg2.jpg');
+  background-size: cover;
 }
 
 .background-video{
@@ -45,7 +46,7 @@ body{
   top: 30%;
   left: 42.5vw;
   animation-name: landing_page_1;
-  animation-delay: 5s;
+  animation-delay: 2s;
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
@@ -62,7 +63,7 @@ body{
   left: 48.5vw;
   animation-name: landing_page_2;
   animation-duration: 0s;
-  animation-delay: 5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -74,7 +75,7 @@ body{
   z-index: 1;
   background-color: black;
   animation-name: landing_page;
-  animation-delay: 5s;
+  animation-delay: 2s;
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
@@ -94,7 +95,7 @@ body{
   height: 42vh;
   margin-top: 35vh;
   animation-name: text_box;
-  animation-delay: 9s;
+  animation-delay: 6s;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
@@ -118,7 +119,7 @@ body{
   top: 20vh;
   animation-name: coder;
   animation-duration: 1s;
-  animation-delay: 12s;
+  animation-delay: 9s;
   animation-fill-mode: forwards;
 }
 @keyframes coder{
@@ -134,7 +135,7 @@ body{
   top: 25vh;
   animation-name: player;
   animation-duration: 1s;
-  animation-delay: 13s;
+  animation-delay: 10s;
   animation-fill-mode: forwards;
 }
 @keyframes player{
@@ -150,7 +151,7 @@ body{
   top: 30vh;
   animation-name: genius;
   animation-duration: 1s;
-  animation-delay: 14s;
+  animation-delay: 11s;
   animation-fill-mode: forwards;
 }
 @keyframes genius{
@@ -166,7 +167,7 @@ body{
   top: 35vh;
   animation-name: hide;
   animation-duration: 1s;
-  animation-delay: 15s;
+  animation-delay: 12s;
   animation-fill-mode: forwards;
 }
 @keyframes hide{

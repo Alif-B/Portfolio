@@ -11,7 +11,7 @@ class homepage extends Component {
                 </div>
                 <div className='background-video' id="animation">
                     <img id='my_pic' src={MyLogo} alt='Logo'/>
-                    <Spinner id='spinner1'/>
+                    {/* <Spinner id='spinner1'/> */}
                 </div>
                 <div id='some_text'>
                     <p id='intro' className='traits'> Hi I'm Sheikh, <br/><br/> But they call me Alif! </p>
