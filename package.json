@@ -12,7 +12,10 @@
     "material-ui-icons": "^1.0.0-beta.36",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3"
+    "react-mdl": "^2.1.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^3.4.3",
+    "react-wordcloud": "^1.2.7"
   },
   "scripts": {
     "start": "react-scripts start",

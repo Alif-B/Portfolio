@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Content } from 'react-mdl';
 import Router from './Components/route';
-import Waves from './Components/Images/waves.mp4';
 import Background from './Components/Images/computer_bg.jpg';
 import { Link } from 'react-router-dom';
 import MobileNav from './Components/mobile_nav';

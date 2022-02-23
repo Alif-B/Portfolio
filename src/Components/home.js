@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Spinner } from 'react-mdl';
 import MyLogo from './Images/node.png';
 
 class homepage extends Component {
@@ -15,10 +14,10 @@ class homepage extends Component {
                 </div>
                 <div id='some_text'>
                     <p id='intro' className='traits'> Hi I'm Sheikh, <br/><br/> But they call me Alif! </p>
-                    <p id='coder' className='traits'> Great Coder. </p>
+                    <p id='coder' className='traits'> DevOps Enthusiast </p>
                     <p id='player' className="traits"> Non-Nobel Prize Winner </p>
-                    <p id='genius' className="traits"> Secret Genius... </p>
-                    <p id='hide' className="traits"> I hide it very well. </p>
+                    <p id='genius' className="traits"> Secret Genius ... Nobody can tell </p>
+                    <p id='hide' className="traits"> Workplace Entertainer - Will Chan (My Boss) </p>
                 </div>
             </div>
         )
