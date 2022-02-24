@@ -1,4 +1,3 @@
-import { SurroundSoundOutlined } from '@material-ui/icons';
 import React, { Component } from 'react';
 import {Tabs, Tab, Chip, ChipContact} from 'react-mdl';
 

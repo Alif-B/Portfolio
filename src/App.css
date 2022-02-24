@@ -178,7 +178,7 @@ body{
 /* ---------------------- About Me Page ------------------------ */
 #id_card, #contact_card{
   /* background-color:rgba(0,0,0,0.7); */
-  background-image: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 55%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%);
+  background-image: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%);
   font-family: 'Chathura', sans-serif;
   font-size: 10vh;
   position: absolute;
@@ -203,10 +203,11 @@ body{
 
 .about_text{
   position: relative;
-  top: 60%;
+  top: 20%;
   font-family: 'Chathura', sans-serif;
   font-size: 8vh;
   color: white;
+  line-height: 4vh;
 }
 #about2{
   font-size: 6vh;
@@ -215,6 +216,17 @@ body{
   font-size: 4vh;
   width: 86%;
   left: 7%;
+  line-height: 3.5vh;
+}
+#about_div{
+  position: relative;
+  height: 45%;
+  top: 55%;
+}
+#about_inside_div{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /**************************** Resume Page ******************************/
@@ -240,6 +252,11 @@ body{
   height: 50vh;
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
+}
+.resume-card-texts{
+  position: relative;
+  top: 47%;
+  transform: translateY(-50%);
 }
 #sfu-title{
   background-image: url('./Components/Images/sfu.jpg');
@@ -396,7 +413,7 @@ body{
   font-family: 'Amatic SC', cursive;
   font-size: 4vh;
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   width: 85vw;
   left: 7.5vw;
 }

@@ -16,19 +16,23 @@ class Resume extends Component{
                     <Card id='SFU-card' shadow={10}>
                         <CardTitle id='sfu-title'> </CardTitle>
                         <CardText id='sfu-text'>
-                            <p className='school_cards'> Simon Fraser University </p>
-                            Faculty of Applied Sciences <br/>
-                            Computer Enginnering <br/>
-                            September 2015 - April 2018 
+                            <div className="resume-card-texts">
+                                <p className='school_cards'> Simon Fraser University </p>
+                                Faculty of Applied Sciences <br/>
+                                Computer Enginnering <br/>
+                                September 2015 - April 2018 
+                            </div>
                         </CardText>
                     </Card>
                     <Card id='BCIT-card' shadow={10}>
                         <CardTitle id='bcit-title'> </CardTitle>
                         <CardText id='bcit-text'> 
-                            <p className='school_cards'>British Columbia Institute of Technology </p>
-                            Computer Information Technology (C.I.T) <br/>
-                            September 2019 - April 2021 <br/>
-                            Graduation Date: April 2021
+                            <div className="resume-card-texts">
+                                <p className='school_cards'>British Columbia Institute of Technology </p>
+                                Computer Information Technology (C.I.T) <br/>
+                                September 2019 - April 2021 <br/>
+                                Graduation Date: April 2021
+                            </div>
                         </CardText>
                     </Card>
                 </div>
@@ -40,28 +44,34 @@ class Resume extends Component{
                     <Card id='CAF-card' shadow={0}>
                         <CardTitle id='caf-title'> </CardTitle>
                         <CardText id='caf-text'>
-                            <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
-                            Infantry Solider <br/>
-                            October 2018 - Present <br/>
-                            Training on descipline and is adaptable to the extreme conditions
+                            <div className="resume-card-texts">
+                                <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
+                                Infantry Solider <br/>
+                                October 2018 - Present <br/>
+                                Trained for descipline and adaptability to the extreme conditions
+                            </div>
                         </CardText>
                     </Card>
                     <Card id='Microserve-card' shadow={0}>
                         <CardTitle id='microserve-title'> </CardTitle>
                         <CardText id='microserve-text'> 
-                            <p style={{fontSize: '6vh'}}> Microserve Inc </p>
-                            Deployment Technician <br/>
-                            June 2017 - Jan 2018 <br/>
-                            Setting up and troubleshooting computers/servers while providing technical support
+                            <div className="resume-card-texts">
+                                <p style={{fontSize: '6vh'}}> Microserve Inc </p>
+                                Deployment Technician <br/>
+                                June 2017 - Jan 2018 <br/>
+                                Setting up and troubleshooting computers/servers while providing technical support
+                            </div>
                         </CardText>
                     </Card>
                     <Card id='Mohsen-card' shadow={0}>
                         <CardTitle id='mohsen-title'> </CardTitle>
                         <CardText id='mohsen-text'> 
-                            <p style={{fontSize: '6vh'}}> AutoMo </p>
-                            Website Developer <br/>
-                            May 2020 - Present <br/>
-                            Building, Deploying and Maintaing a website for a client while providing ongoing support
+                            <div className="resume-card-texts">
+                                <p style={{fontSize: '6vh'}}> AutoMo </p>
+                                Website Developer <br/>
+                                May 2020 - Present <br/>
+                                Building, Deploying and Maintaing a website for a client while providing ongoing support
+                            </div>
                         </CardText>
                     </Card>
                 </div>
@@ -119,8 +129,10 @@ class Resume extends Component{
                 <Card id='downres-card' shadow={0}>
                     <CardTitle id='downres-title'> </CardTitle>
                     <CardText id='downres-text'> 
-                        <p style={{fontSize: '6vh'}}> Full Resume </p>
-                        In Portable Document Format <br/>
+                        <div className="resume-card-texts">
+                            <p style={{fontSize: '6vh'}}> Full Resume </p>
+                            In Portable Document Format <br/>
+                        </div>
                     </CardText>
                     <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
@@ -145,7 +157,7 @@ class Resume extends Component{
                     <Tab id='tababo'> Education </Tab>
                     <Tab id='tababo'> Work Experience </Tab>
                     <Tab id='tababo'> Hobbies </Tab>
-                    <Tab id='tababo'> Download </Tab>
+                    <Tab id='tababo'> Resume </Tab>
                 </Tabs>
                 <section>
                     <div className='content'>{this.toggleCategories()}</div>

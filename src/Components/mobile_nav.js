@@ -14,13 +14,13 @@ const useStyles = makeStyles({
   },
 });
 
-const styles = {
-  stickToBottom: {
-    width: '100%',
-    position: 'fixed',
-    bottom: 0,
-  },
-};
+// const styles = {
+//   stickToBottom: {
+//     width: '100%',
+//     position: 'fixed',
+//     bottom: 0,
+//   },
+// };
 
 export default function LabelBottomNavigation() {
   const classes = useStyles();

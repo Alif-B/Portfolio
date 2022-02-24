@@ -105,7 +105,7 @@ class Projects extends Component{
                             Skills: VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='#'>
+                        <a href='#navbar'>
                             <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored> Not Applicable </Button>
                         </a>
                         </CardActions>
