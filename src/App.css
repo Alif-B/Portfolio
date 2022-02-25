@@ -5,9 +5,8 @@ font-family: 'Lobster', cursive;
 font-family: 'Walter Turncoat', cursive;
 */
 #navbar{
-  background-color:rgba(0,0,0,0.7);
+  background-color:rgba(0,0,0,0.9);
   font-family: 'Amatic SC', cursive;
-  font-size: 70vw;
 }
 #mobile_nav{
   z-index: -100;
@@ -24,7 +23,7 @@ font-family: 'Walter Turncoat', cursive;
 
 body{
   background-color: black;
-  background-image: url('./Components/Images/computer_bg2.jpg');
+  background-image: url('./Components/Images/2.jpg');
   background-size: cover;
 }
 

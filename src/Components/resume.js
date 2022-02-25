@@ -45,21 +45,10 @@ class Resume extends Component{
                         <CardTitle id='caf-title'> </CardTitle>
                         <CardText id='caf-text'>
                             <div className="resume-card-texts">
-                                <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
-                                Infantry Solider <br/>
-                                October 2018 - Present <br/>
-                                Trained for descipline and adaptability to the extreme conditions
-                            </div>
-                        </CardText>
-                    </Card>
-                    <Card id='Microserve-card' shadow={0}>
-                        <CardTitle id='microserve-title'> </CardTitle>
-                        <CardText id='microserve-text'> 
-                            <div className="resume-card-texts">
-                                <p style={{fontSize: '6vh'}}> Microserve Inc </p>
-                                Deployment Technician <br/>
-                                June 2017 - Jan 2018 <br/>
-                                Setting up and troubleshooting computers/servers while providing technical support
+                                <p style={{fontSize: '6vh'}}> East Side Game Studio </p>
+                                DevOps Engineer <br/>
+                                August 2021 - Present <br/>
+                                Automate the creation and maintenance of AWS resources for the developers using GitOps
                             </div>
                         </CardText>
                     </Card>
@@ -67,10 +56,21 @@ class Resume extends Component{
                         <CardTitle id='mohsen-title'> </CardTitle>
                         <CardText id='mohsen-text'> 
                             <div className="resume-card-texts">
-                                <p style={{fontSize: '6vh'}}> AutoMo </p>
-                                Website Developer <br/>
-                                May 2020 - Present <br/>
-                                Building, Deploying and Maintaing a website for a client while providing ongoing support
+                                <p style={{fontSize: '6vh'}}> Procurify Inc </p>
+                                DevOps Intern <br/>
+                                January 2021 - August 2021 <br/>
+                                Built custom logs and metrics exporters for various development and operations platforms
+                            </div>
+                        </CardText>
+                    </Card>
+                    <Card id='Microserve-card' shadow={0}>
+                        <CardTitle id='microserve-title'> </CardTitle>
+                        <CardText id='microserve-text'> 
+                            <div className="resume-card-texts">
+                                <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
+                                Infantry Solider <br/>
+                                October 2018 - October 2020 <br/>
+                                Trained for descipline and adaptability to the extreme conditions
                             </div>
                         </CardText>
                     </Card>
