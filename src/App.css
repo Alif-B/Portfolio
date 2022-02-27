@@ -6,7 +6,7 @@ font-family: 'Walter Turncoat', cursive;
 */
 #navbar{
   background-color:rgba(0,0,0,0.9);
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Chathura', sans-serif;
 }
 #mobile_nav{
   z-index: -100;
@@ -23,7 +23,7 @@ font-family: 'Walter Turncoat', cursive;
 
 body{
   background-color: black;
-  background-image: url('./Components/Images/2.jpg');
+  background-image: url('./Components/Images/6.png');
   background-size: cover;
 }
 
@@ -88,7 +88,7 @@ body{
   color: transparent;
   position: absolute;
   top: -10vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   width: 0vw;
   margin-left: 30vw;
   height: 42vh;
@@ -330,17 +330,25 @@ body{
 
 
 /* ---------------Card Title Boxes-------------- */
-#caf-title, #microserve-title, #mohsen-title, #downres-title, #canvas-title, #portfolio-title, #monty-title, #router-title{
-  background-image: url('./Components/Images/caf.png');
+#caf-title, #microserve-title, #mohsen-title, #downres-title, #canvas-title, #portfolio-title, 
+#monty-title, #router-title, #automo-proj, #soldier-proj{
+  background-image: url('./Components/Images/esg.png');
   background-size: cover;
   background-position: center;
   height: 30vh;
 }
+#soldier-proj{
+  background-image: url('./Components/Images/caf.jpg');
+}
+#automo-proj{
+  background-image: url('./Components/Images/AutoMo.png');
+  background-color: #232323;
+}
 #microserve-title{
-  background-image: url('./Components/Images/microserve.png');
+  background-image: url('./Components/Images/caf.jpg');
 }
 #mohsen-title{
-  background-image: url('./Components/Images/AutoMo.png');
+  background-image: url('./Components/Images/procurify.png');
   background-color: #232323;
 }
 #canvas-title{
@@ -367,8 +375,10 @@ body{
 
 /* -------------Card Textboxes-------------- */
 #caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
-  background: -webkit-linear-gradient(#154100, #000000);
-  background: linear-gradient(#154100, #000000);
+  /* background: -webkit-linear-gradient(#021b79, #000000);
+  background: linear-gradient(#021b79, #000000); */
+  background: -webkit-linear-gradient(#0000AE, #000000);
+  background: linear-gradient(#0000AE, #000000);
   width: 94%;
   height: 20vh;
   color: white;
@@ -378,8 +388,8 @@ body{
   left: 3%;
 }
 #microserve-text{
-  background: -webkit-linear-gradient(#021b79, #000000);
-  background: linear-gradient(#021b79, #000000);
+  background: -webkit-linear-gradient(#154100, #000000);
+  background: linear-gradient(#154100, #000000);
 }
 #mohsen-text{
   background: -webkit-linear-gradient(#404040, #000000);
@@ -460,7 +470,8 @@ body{
 /****************************** Contact Page **************************************/
 #contact-div{
   position: absolute;
-  top: 75%;
+  top: 65%;
+  transform: translateY(-50%);
   width: 100%;
   height: 10vh;
   text-align: center;
@@ -478,7 +489,8 @@ body{
 }
 #actual_contact{
   position: absolute;
-  top: 92%;
+  top: 98%;
+  transform: translateY(-50%);
   height: 10vh;
   width: 100%;
   font-size: 5vh;

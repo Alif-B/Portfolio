@@ -17,12 +17,12 @@ function App() {
     <Layout>
         <Header id="navbar" title={<Link style={{textDecoration:'none', fontFamily: "Lobster", fontSize:'4vh', color: 'white'}} to="/">Alif</Link>} scroll>
             <Navigation>
-                <a style={{fontSize:'1.75vh'}} href="/">Home</a>
-                <a style={{fontSize:'1.75vh'}} href="/about">About Me</a>
-                <a style={{fontSize:'1.75vh'}} href="/resume">Resume</a>
-                <a style={{fontSize:'1.75vh'}} href="/skills">Skills</a>
-                <a style={{fontSize:'1.75vh'}} href="/projects">Projects</a>
-                <a style={{fontSize:'1.75vh'}} href="/contacts">Contacts</a>
+                <a style={{fontSize:'3vh'}} href="/"><b>Home</b></a>
+                <a style={{fontSize:'3vh'}} href="/about"><b>About Me</b></a>
+                <a style={{fontSize:'3vh'}} href="/resume"><b>Resume</b></a>
+                <a style={{fontSize:'3vh'}} href="/skills"><b>Skills</b></a>
+                <a style={{fontSize:'3vh'}} href="/projects"><b>Projects</b></a>
+                <a style={{fontSize:'3vh'}} href="/contacts"><b>Contacts</b></a>
             </Navigation>
         </Header>
 

@@ -12,7 +12,7 @@ class Projects extends Component{
             return(
                 <div className='resume-tab'>
                     <Card id='CAF-card1' shadow={0}>
-                        <CardTitle id='mohsen-title'> </CardTitle>
+                        <CardTitle id='automo-proj'> </CardTitle>
                         <CardText id='mohsen-text'>
                             <p style={{fontSize: '6vh'}}> AutoMo BC </p>
                             <p style={{fontSize: '4vh', width: '90%'}}> Building, Deploying and Maintaing a website for a client while providing ongoing support <br/>
@@ -69,7 +69,7 @@ class Projects extends Component{
             return(
                 <div className='resume-tab'>
                     <Card id='CAF-card1' shadow={0}>
-                        <CardTitle id='caf-title'> </CardTitle>
+                        <CardTitle id='soldier-proj'> </CardTitle>
                         <CardText id='caf-text'>
                             <p style={{fontSize: '6vh'}}> Soldier Deployment </p>
                             <p style={{fontSize: '4vh', width: '90%'}}>A python based software that helps track soldier deployments locations and status <br/>

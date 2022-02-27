@@ -45,7 +45,7 @@ class Resume extends Component{
                         <CardTitle id='caf-title'> </CardTitle>
                         <CardText id='caf-text'>
                             <div className="resume-card-texts">
-                                <p style={{fontSize: '6vh'}}> East Side Game Studio </p>
+                                <p style={{fontSize: '6vh'}}> East Side Games Group </p>
                                 DevOps Engineer <br/>
                                 August 2021 - Present <br/>
                                 Automate the creation and maintenance of AWS resources for the developers using GitOps
@@ -69,7 +69,7 @@ class Resume extends Component{
                             <div className="resume-card-texts">
                                 <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
                                 Infantry Solider <br/>
-                                October 2018 - October 2020 <br/>
+                                October 2018 - March 2021 <br/>
                                 Trained for descipline and adaptability to the extreme conditions
                             </div>
                         </CardText>
