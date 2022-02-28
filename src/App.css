@@ -436,7 +436,7 @@ body{
   left: 15vw;
   text-align: center;
 }
-.language-chip, .tool-chip, .software-chip{
+.dev-chip, .devops-chip, .general-chip{
   margin-right: 1em;
   padding-right: 1em;
 }
@@ -722,7 +722,7 @@ body{
     top: 77vh;
     left: 5vw;
     width: 90vw;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
   }
   
   /* -------------BCIT CARD------------- */
@@ -756,8 +756,6 @@ body{
   }
   #wordcloud{
     height: 63vh;
-    width: 90vw;
-    background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 10vh;
   }
   /*********************************** Skills Page *************************************/

@@ -8,6 +8,17 @@ import MobileNav from './Components/mobile_nav';
 
 
 function App() {
+  const navLinkStyle = {
+    backgroundColor: "#0061B2",
+    fontSize: '3vh',
+    borderRadius: '5%',
+  };
+  const alifStyle = {
+    textDecoration:'none', 
+    fontFamily: "Lobster", 
+    fontSize:'4vh', 
+    color: 'white'
+  };
   return (
     <div className="demo-big-content">
       {/* <video className='background-video' autoPlay="autoplay" loop="loop" muted>
@@ -15,9 +26,9 @@ function App() {
         Your browser does not support the video tag
       </video> */}
     <Layout>
-        <Header id="navbar" title={<Link style={{textDecoration:'none', fontFamily: "Lobster", fontSize:'4vh', color: 'white'}} to="/">Alif</Link>} scroll>
+        <Header id="navbar" title={<Link style={alifStyle} to="/">Alif</Link>} scroll>
             <Navigation>
-                <a style={{fontSize:'3vh'}} href="/"><b>Home</b></a>
+                <a style={navLinkStyle} href="/"><b>Home</b></a>
                 <a style={{fontSize:'3vh'}} href="/about"><b>About Me</b></a>
                 <a style={{fontSize:'3vh'}} href="/resume"><b>Resume</b></a>
                 <a style={{fontSize:'3vh'}} href="/skills"><b>Skills</b></a>

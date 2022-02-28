@@ -1,3 +1,4 @@
+import { ArrowLeft } from '@material-ui/icons';
 import React, {Component} from 'react';
 import {Tabs, Tab, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
 import ReactWordcloud from 'react-wordcloud';
@@ -59,7 +60,7 @@ class Resume extends Component{
                                 <p style={{fontSize: '6vh'}}> Procurify Inc </p>
                                 DevOps Intern <br/>
                                 January 2021 - August 2021 <br/>
-                                Built custom logs and metrics exporters for various development and operations platforms
+                                Built custom exporters that collects logs and metrics from various development and operations platforms
                             </div>
                         </CardText>
                     </Card>
@@ -70,7 +71,7 @@ class Resume extends Component{
                                 <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
                                 Infantry Solider <br/>
                                 October 2018 - March 2021 <br/>
-                                Trained for descipline and adaptability to the extreme conditions
+                                Trained for descipline and adaptability to the extreme conditions and stress
                             </div>
                         </CardText>
                     </Card>
@@ -117,10 +118,15 @@ class Resume extends Component{
                 width: '50vw',
                 enableTooltip: false
             };
+            const cloudStyle = {
+                position: 'absolute', 
+                top: '10vh',
+                backgroundColor: 'rgba(0,0,0,0.95)'
+            };
             return(
                 <div className='hobbies'>
                     I am a man of many hobbies. So enjoy this wordcloud!
-                    <ReactWordcloud id='wordcloud' words={words} options={options} style={{position: 'absolute', top: '10vh'}} />
+                    <ReactWordcloud id='wordcloud' words={words} options={options} style={cloudStyle} />
                 </div>
             )
         }
