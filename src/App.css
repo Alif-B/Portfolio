@@ -23,7 +23,7 @@ font-family: 'Walter Turncoat', cursive;
 
 body{
   background-color: black;
-  background-image: url('./Components/Images/6.png');
+  background-image: url('./Components/Images/1.jpeg');
   background-size: cover;
 }
 
@@ -88,7 +88,7 @@ body{
   color: transparent;
   position: absolute;
   top: -10vh;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.85);
   width: 0vw;
   margin-left: 30vw;
   height: 42vh;
