@@ -8,6 +8,12 @@ font-family: 'Walter Turncoat', cursive;
   background-color:rgba(0,0,0,0.9);
   font-family: 'Chathura', sans-serif;
 }
+@keyframes bgColorChange{
+  to    { background-color: #5D12A6; }
+}
+@keyframes bgColorChangeBack{
+  to    { background-color: transparent; }
+}
 #mobile_nav{
   z-index: -100;
   visibility: hidden;
@@ -23,7 +29,7 @@ font-family: 'Walter Turncoat', cursive;
 
 body{
   background-color: black;
-  background-image: url('./Components/Images/1.jpeg');
+  background-image: url('./Components/Images/desktop_bg.jpeg');
   background-size: cover;
 }
 
@@ -419,8 +425,8 @@ body{
 /* -------------- Hobbies ----------------*/
 .hobbies{
   text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 4vh;
+  font-family: 'Chathura', sans-serif;
+  font-size: 5vh;
   position: absolute;
   top: 20vh;
   width: 85vw;

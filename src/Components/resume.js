@@ -119,13 +119,13 @@ class Resume extends Component{
                 enableTooltip: false
             };
             const cloudStyle = {
-                position: 'absolute', 
-                top: '10vh',
-                backgroundColor: 'rgba(0,0,0,0.95)'
+                position: 'relative', 
+                top: '5vh',
+                backgroundColor: 'rgba(0,0,0,0.8)'
             };
             return(
                 <div className='hobbies'>
-                    I am a man of many hobbies. So enjoy this wordcloud!
+                    <b>When I am not DevOps-ing... <br/><br/>You can find me doing one of the following!</b>
                     <ReactWordcloud id='wordcloud' words={words} options={options} style={cloudStyle} />
                 </div>
             )
