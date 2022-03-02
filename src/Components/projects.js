@@ -62,6 +62,7 @@ class Projects extends Component{
                         </a>
                         </CardActions>
                     </Card>
+                    <div id='proj-footer-space'/>
                 </div>
             )
         }
@@ -110,6 +111,7 @@ class Projects extends Component{
                         </a>
                         </CardActions>
                     </Card>
+                    <div id='proj-footer-space'/>
                 </div>
             )
         }
@@ -120,7 +122,7 @@ class Projects extends Component{
             <div className='resume-tab'>
                 <div id='mobile-app-bar'>
                     <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
-                    <p className='current-page'>About me</p>
+                    <p className='current-page'>Projects</p>
                 </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
                     <Tab id='tababo'> Cloud </Tab>

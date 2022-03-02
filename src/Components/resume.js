@@ -1,8 +1,7 @@
-import { ArrowLeft } from '@material-ui/icons';
 import React, {Component} from 'react';
 import {Tabs, Tab, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
 import ReactWordcloud from 'react-wordcloud';
-import ResumePDF from './Images/Resume.pdf'
+import ResumePDF from './Images/Resume.pdf';
 
 class Resume extends Component{
     constructor(props){
@@ -36,6 +35,7 @@ class Resume extends Component{
                             </div>
                         </CardText>
                     </Card>
+                    <div id='edu-footer-space'></div>
                 </div>
             )
         }
@@ -75,6 +75,7 @@ class Resume extends Component{
                             </div>
                         </CardText>
                     </Card>
+                    <div id='job-footer-space'></div>
                 </div>
             )
         }

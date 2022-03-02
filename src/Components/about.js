@@ -8,7 +8,7 @@ class About extends Component {
             <div>
                 <div id='mobile-app-bar'>
                     <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
-                    <p className='current-page'>About me</p>
+                    <p className='current-page'>About Me</p>
                 </div>
                 <div id='id_card'>
                     <img id="beautiful_me" src={Me} alt='Me' /> 

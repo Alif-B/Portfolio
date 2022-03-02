@@ -52,7 +52,7 @@ class Skills extends Component {
             <div className='resume-tab'>
                 <div id='mobile-app-bar'>
                     <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
-                    <p className='current-page'>About me</p>
+                    <p className='current-page'>Skills</p>
                 </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
                     <Tab id='tababo'> All </Tab>
@@ -60,7 +60,7 @@ class Skills extends Component {
                     <Tab id='tababo'> Develoment </Tab>
                     <Tab id='tababo'> General </Tab>
                 </Tabs>
-                <div className='hobbies'>I am a man of many skills aswell. So use the tabs above to narrow your search</div>
+                <div className='hobbies'><b>I am a man of many skills aswell. So use the tabs above to narrow your search</b></div>
 
                 <div id='skills'>
                     <Chip className='dev-chip'><ChipContact>
@@ -352,6 +352,7 @@ class Skills extends Component {
                 <section>
                     <div className='content'>{this.toggleCategories()}</div>
                 </section>
+                <div id='job-footer-space'></div>
             </div>
         )
     }

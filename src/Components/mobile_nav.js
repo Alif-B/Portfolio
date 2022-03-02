@@ -31,7 +31,7 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation id='mobile_nav' className={classes.stickToBottom} value={value} onChange={handleChange} className={classes.root}>
+    <BottomNavigation id='mobile_nav' className={classes.stickToBottom} value={value} onChange={handleChange}>
       <BottomNavigationAction href='/about' id='nav_icons' icon={<PersonIcon />} />
       <BottomNavigationAction href='/resume' id='nav_icons' icon={<ReceiptIcon />} />
       <BottomNavigationAction href='/skills' id='nav_icons' icon={<BuildIcon />} />

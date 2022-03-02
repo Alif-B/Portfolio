@@ -15,7 +15,7 @@ class contacts extends Component{
             <div>
                 <div id='mobile-app-bar'>
                     <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
-                    <p className='current-page'>About me</p>
+                    <p className='current-page'>Contacts</p>
                 </div>
             
                 <div id='contact_card'>
