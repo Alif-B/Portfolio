@@ -3,7 +3,7 @@ font-family: 'Amatic SC', cursive;
 font-family: 'Chathura', sans-serif;
 font-family: 'Lobster', cursive;
 font-family: 'Walter Turncoat', cursive;
-font-family: 'Oswald', sans-serif;
+font-family: 'ZCOOL QingKe HuangYou', cursive;
 */
 #navbar{
   background-color:rgba(0,0,0,0.9);
@@ -211,19 +211,20 @@ body{
 .about_text{
   position: relative;
   top: 20%;
-  font-family: 'Chathura', sans-serif;
-  font-size: 8vh;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 6vh;
   color: white;
   line-height: 4vh;
 }
 #about2{
-  font-size: 6vh;
+  font-size: 4vh;
 }
 #about3{
   font-size: 4vh;
   width: 86%;
   left: 7%;
   line-height: 3.5vh;
+  font-family: 'Chathura', sans-serif;
 }
 #about_div{
   position: relative;
@@ -427,8 +428,8 @@ body{
 /* -------------- Hobbies ----------------*/
 .hobbies{
   text-align: center;
-  font-family: 'Chathura', sans-serif;
-  font-size: 5vh;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 4vh;
   position: absolute;
   top: 20vh;
   width: 85vw;

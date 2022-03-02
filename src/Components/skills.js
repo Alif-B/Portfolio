@@ -60,7 +60,7 @@ class Skills extends Component {
                     <Tab id='tababo'> Develoment </Tab>
                     <Tab id='tababo'> General </Tab>
                 </Tabs>
-                <div className='hobbies'><b>I am a man of many skills aswell. So use the tabs above to narrow your search</b></div>
+                <div className='hobbies'>I am a man of many skills aswell. So use the tabs above to narrow your search</div>
 
                 <div id='skills'>
                     <Chip className='dev-chip'><ChipContact>
