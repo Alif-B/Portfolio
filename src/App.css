@@ -465,7 +465,7 @@ body{
   top: 20vh;
   left: 7.5vw;
   width: 25vw;
-  height: 60vh;
+  height: 59vh;
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
 }
@@ -704,6 +704,9 @@ body{
     font-size: 6vh;
     line-height: 4vh;
   }
+  #about1{
+    line-height: 6vh;
+  }
   #about2{
     font-size: 4vh;
     line-height: 5vh;
@@ -744,6 +747,10 @@ body{
   #Microserve-card, #Mohsen-card, #CAF-card, #downres-card{
     left: 5vw;
     width: 90vw;
+    height: 60;
+  }
+  #caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
+    height: 30vh;
   }
   #Mohsen-card{
     top: 75vh;

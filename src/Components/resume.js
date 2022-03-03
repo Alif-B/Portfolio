@@ -13,6 +13,49 @@ class Resume extends Component{
         if (this.state.activeTab === 0){
             return(
                 <div className='resume-cards'>
+                    <Card id='CAF-card' shadow={0}>
+                        <CardTitle id='caf-title'> </CardTitle>
+                        <CardText id='caf-text'>
+                            <div className="resume-card-texts">
+                                <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> East Side Games Group </b> <br/>
+                                <b style={{fontSize: '3vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>DevOps Engineer </b><br/>
+                                <b>August 2021 - Present</b> <br/>
+                                <p style={{fontSize: '3vh'}}>Automate the creation and maintenance of AWS resources for the developers using GitOps. 
+                                Also managed several services like Jenkins, Datadog, Kubernetes, PlasticSCM, Atlantis, Ansible etc</p>
+                            </div>
+                        </CardText>
+                    </Card>
+                    <Card id='Mohsen-card' shadow={0}>
+                        <CardTitle id='mohsen-title'> </CardTitle>
+                        <CardText id='mohsen-text'> 
+                            <div className="resume-card-texts">
+                                <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Procurify Inc </b><br/>
+                                <b style={{fontSize: '3vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>DevOps Intern </b><br/>
+                                <b>January 2021 - August 2021 </b><br/>
+                                <p style={{fontSize: '3vh'}}>Built custom exporters that collects logs and metrics from various development platforms such as
+                                SonarQube, CircleCI, Elasticsearch. Then integrated them to Grafana to create meaningful dashboards</p>
+                            </div>
+                        </CardText>
+                    </Card>
+                    <Card id='Microserve-card' shadow={0}>
+                        <CardTitle id='microserve-title'> </CardTitle>
+                        <CardText id='microserve-text'> 
+                            <div className="resume-card-texts">
+                                <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Canadian Armed Forces </b><br/>
+                                <b style={{fontSize: '3vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>Infantry Solider </b><br/>
+                                <b>October 2018 - March 2021 </b><br/>
+                                <p style={{fontSize: '3vh'}}>Trained for descipline and adaptability to the extreme conditions and stress.
+                                Also practiced leadership skills such as communication, resource management and time management.</p>
+                            </div>
+                        </CardText>
+                    </Card>
+                    <div id='job-footer-space'></div>
+                </div>
+            )
+        }
+        else if (this.state.activeTab === 1){
+            return(
+                <div className='resume-cards'>
                     <Card id='SFU-card' shadow={10}>
                         <CardTitle id='sfu-title'> </CardTitle>
                         <CardText id='sfu-text'>
@@ -36,46 +79,6 @@ class Resume extends Component{
                         </CardText>
                     </Card>
                     <div id='edu-footer-space'></div>
-                </div>
-            )
-        }
-        else if (this.state.activeTab === 1){
-            return(
-                <div className='resume-cards'>
-                    <Card id='CAF-card' shadow={0}>
-                        <CardTitle id='caf-title'> </CardTitle>
-                        <CardText id='caf-text'>
-                            <div className="resume-card-texts">
-                                <p style={{fontSize: '6vh'}}> East Side Games Group </p>
-                                DevOps Engineer <br/>
-                                August 2021 - Present <br/>
-                                Automate the creation and maintenance of AWS resources for the developers using GitOps
-                            </div>
-                        </CardText>
-                    </Card>
-                    <Card id='Mohsen-card' shadow={0}>
-                        <CardTitle id='mohsen-title'> </CardTitle>
-                        <CardText id='mohsen-text'> 
-                            <div className="resume-card-texts">
-                                <p style={{fontSize: '6vh'}}> Procurify Inc </p>
-                                DevOps Intern <br/>
-                                January 2021 - August 2021 <br/>
-                                Built custom exporters that collects logs and metrics from various development and operations platforms
-                            </div>
-                        </CardText>
-                    </Card>
-                    <Card id='Microserve-card' shadow={0}>
-                        <CardTitle id='microserve-title'> </CardTitle>
-                        <CardText id='microserve-text'> 
-                            <div className="resume-card-texts">
-                                <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
-                                Infantry Solider <br/>
-                                October 2018 - March 2021 <br/>
-                                Trained for descipline and adaptability to the extreme conditions and stress
-                            </div>
-                        </CardText>
-                    </Card>
-                    <div id='job-footer-space'></div>
                 </div>
             )
         }
@@ -137,7 +140,7 @@ class Resume extends Component{
                     <CardTitle id='downres-title'> </CardTitle>
                     <CardText id='downres-text'> 
                         <div className="resume-card-texts">
-                            <p style={{fontSize: '6vh'}}> Full Resume </p>
+                        <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Full Resume </b> <br/>
                             In Portable Document Format <br/>
                         </div>
                     </CardText>
@@ -161,8 +164,8 @@ class Resume extends Component{
                     <p className='current-page'>Resume</p>
                 </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
+                    <Tab id='tababo'> Experience </Tab>
                     <Tab id='tababo'> Education </Tab>
-                    <Tab id='tababo'> Work Experience </Tab>
                     <Tab id='tababo'> Hobbies </Tab>
                     <Tab id='tababo'> Resume </Tab>
                 </Tabs>

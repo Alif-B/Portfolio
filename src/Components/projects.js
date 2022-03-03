@@ -14,10 +14,11 @@ class Projects extends Component{
                     <Card id='CAF-card1' shadow={0}>
                         <CardTitle id='automo-proj'> </CardTitle>
                         <CardText id='mohsen-text'>
-                            <p style={{fontSize: '6vh'}}> AutoMo BC </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}> Building, Deploying and Maintaing a website for a client while providing ongoing support <br/>
-                            October 2019 - Present <br/>
-                            Skills: HTML, CSS, JavaScript, PHP, SQL <br/></p>
+                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> AutoMo BC </b> <br/>
+                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>October 2019 - Present</b>
+                            <p style={{fontSize: '3vh', width: '90%'}}> A production environment web application that serves end users
+                            trying to book a vehicle service appointment with AutoMo BCand stores provided data in a Relational Database.<br/>
+                            <b>Skills:</b> HTML, CSS, JavaScript, PHP, SQL, Database Desgining <br/></p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/Alif-B/AutoMo.git'>
@@ -31,10 +32,11 @@ class Projects extends Component{
                     <Card id='Mohsen-card1' shadow={0}>
                         <CardTitle id='canvas-title'> </CardTitle>
                         <CardText id='canvas-text'> 
-                            <p style={{fontSize: '6vh'}}> Colaborative Canvas </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>A social media platform for pixel artists <br/>
-                            April 2020 - June 2020 <br/>
-                            Skills: Python, Peewee ORM, Flask Web Framework, SQLite Database, Travis Continious Integration, Git Workflow, Agile Development Method  </p>
+                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Colaborative Canvas </b> <br/>
+                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>April 2020 - June 2020</b>
+                            <p style={{fontSize: '3vh', width: '90%'}}>A social media platform that allows users to visit each other's
+                            canvases and see, create, update and delete pixels to create art! <br/>
+                            <b>Skills:</b> Python, Peewee ORM, Flask Web Framework, SQLite Database, Mocha  </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/crockk/collaborative-canvas.git'>
@@ -48,10 +50,11 @@ class Projects extends Component{
                     <Card id='Microserve-card1' shadow={0}>
                         <CardTitle id='portfolio-title'> </CardTitle>
                         <CardText id='portfolio-text'> 
-                            <p style={{fontSize: '6vh'}}> Portfolio </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>This beautiful piece of art right here <br/>
-                            June 2020 - Present <br/>
-                            Skills: React, HTML, CSS, Vanilla JS, GitHub, Material UI, React MDL </p>
+                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Portfolio </b> <br/>
+                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>June 2020 - Present</b>
+                            <p style={{fontSize: '3vh', width: '90%'}}>This beautiful piece of art right here ... Picasso! 
+                            Contact me to place your ads on this website!<br/>
+                            <b>Skills:</b> React, HTML, CSS, JaveScript, GitHub, Material UI, React MDL, CloudFlare, Hostinger, cPanels </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/Alif-B/Portfolio'>
@@ -72,10 +75,11 @@ class Projects extends Component{
                     <Card id='CAF-card1' shadow={0}>
                         <CardTitle id='soldier-proj'> </CardTitle>
                         <CardText id='caf-text'>
-                            <p style={{fontSize: '6vh'}}> Soldier Deployment </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>A python based software that helps track soldier deployments locations and status <br/>
-                            January 2020 - April 2020 <br/>
-                            Skills: Python, Peewee ORM, SQLite DB, Test Driven Development, Flask RESTful API, Postman </p>
+                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>Soldier Deployment</b> <br/>
+                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>January 2020 - April 2020</b>
+                            <p style={{fontSize: '3vh', width: '90%'}}>A python based software that uses tkinter Graphical User Interface to
+                            help track soldier deployments locations and status. <br/>
+                            <b>Skills:</b> Python, Peewee ORM, SQLite DB, Test Driven Development, Flask RESTful API, Postman </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/Alif-B/Soldier-Management.git'>
@@ -86,10 +90,11 @@ class Projects extends Component{
                     <Card id='Mohsen-card1' shadow={0}>
                         <CardTitle id='monty-title'> </CardTitle>
                         <CardText id='monty-text'> 
-                            <p style={{fontSize: '6vh'}}> Monty Hall Problem Simulaton </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>An RLab experiment that runs the monty hall problem a set number of times <br/>
-                            February 2020 - March 2020 <br/>
-                            Skills: Problem Solving, RLab </p>
+                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Monty Hall Simulaton </b> <br/>
+                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>February 2020 - March 2020</b>
+                            <p style={{fontSize: '3vh', width: '90%'}}>An RLab experiment that runs the monty hall problem a set number of times
+                            and reports the results to confirm the decision of switching the door when given the option to <br/>
+                            <b>Skills:</b> Problem Solving, RLab </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='https://github.com/Alif-B/MontyHall'>
@@ -100,10 +105,11 @@ class Projects extends Component{
                     <Card id='Microserve-card1' shadow={0}>
                         <CardTitle id='router-title'> </CardTitle>
                         <CardText id='router-text'> 
-                            <p style={{fontSize: '6vh'}}> Router </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>A fully functional router for Virtual Machine networks built by modifying CentOS Linux operating system<br/>
-                            January 2020 - April 2020 <br/>
-                            Skills: VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
+                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Virtual Router </b> <br/>
+                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>January 2020 - April 2020</b>
+                            <p style={{fontSize: '3vh', width: '90%'}}>Create a router for a virtual network built on Raspberry Pi. Then
+                            tested it by adding multiple CentOS VM clients to the network<br/>
+                            <b>Skills:</b> VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href='#navbar'>
