@@ -316,15 +316,32 @@ body{
   line-height: 3vh;
 }
 
-/* -------------Work Cards------------ */
+/* -------------Job Cards------------ */
 #Microserve-card, #Mohsen-card, #CAF-card, #downres-card{
   position: absolute;
   top: 20vh;
   left: 7.5vw;
   width: 25vw;
-  height: 50vh;
+  height: 60vh;
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
+}
+#microserve-title, #caf-title, #mohsen-title, #downres-title{
+  background-image: url('./Components/Images/esg.png');
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+#caf-text, #microserve-text, #mohsen-text, #downres-text{
+  background: -webkit-linear-gradient(#0000AE, #000000);
+  background: linear-gradient(#0000AE, #000000);
+  width: 94%;
+  height: 30vh;
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+  line-height: 3vh;
+  left: 3%;
 }
 #Mohsen-card{
   left: 37.5vw;
@@ -339,20 +356,6 @@ body{
 
 
 /* ---------------Card Title Boxes-------------- */
-#caf-title, #microserve-title, #mohsen-title, #downres-title, #canvas-title, #portfolio-title, 
-#monty-title, #router-title, #automo-proj, #soldier-proj{
-  background-image: url('./Components/Images/esg.png');
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
-}
-#soldier-proj{
-  background-image: url('./Components/Images/caf.jpg');
-}
-#automo-proj{
-  background-image: url('./Components/Images/AutoMo.png');
-  background-color: #232323;
-}
 #microserve-title{
   background-image: url('./Components/Images/caf.jpg');
 }
@@ -360,42 +363,15 @@ body{
   background-image: url('./Components/Images/procurify.png');
   background-color: #232323;
 }
-#canvas-title{
-  background-image: url('./Components/Images/Canvas.PNG');
-  background-size: contain;
-}
 #downres-title{
   background-image: url("./Components/Images/resume.PNG");
   height: 70vh;
   background-position: left;
 }
-#portfolio-title{
-  background-image: url("./Components/Images/node2.PNG");
-  background-color: black;
-}
-#monty-title{
-  background-image: url("./Components/Images/montyhall.png");
-  background-size: contain;
-}
-#router-title{
-  background-image: url("./Components/Images/routerimg.PNG");
-}
+
 
 
 /* -------------Card Textboxes-------------- */
-#caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
-  /* background: -webkit-linear-gradient(#021b79, #000000);
-  background: linear-gradient(#021b79, #000000); */
-  background: -webkit-linear-gradient(#0000AE, #000000);
-  background: linear-gradient(#0000AE, #000000);
-  width: 94%;
-  height: 20vh;
-  color: white;
-  font-family: 'Chathura', sans-serif;
-  font-size: 4vh;
-  line-height: 3vh;
-  left: 3%;
-}
 #microserve-text{
   background: -webkit-linear-gradient(#154100, #000000);
   background: linear-gradient(#154100, #000000);
@@ -465,15 +441,57 @@ body{
   top: 20vh;
   left: 7.5vw;
   width: 25vw;
-  height: 59vh;
+  height: 50vh;
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
+}
+#automo-proj, #canvas-title, #portfolio-title, 
+#monty-title, #router-title,  #soldier-proj{
+  background-image: url('./Components/Images/esg.png');
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+#canvas-text, #portfolio-text, #monty-text, #router-text, #mohsen-text1, #caf-text1{
+  width: 94%;
+  height: 20vh;
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+  line-height: 3vh;
+  left: 3%;
+}
+#mohsen-text1{
+  background: -webkit-linear-gradient(#0000AE, #000000);
+  background: linear-gradient(#0000AE, #000000);
 }
 #Mohsen-card1{
   left: 37.5vw;
 }
 #Microserve-card1{
   left: 67.5vw;
+}
+#automo-proj{
+  background-image: url('./Components/Images/AutoMo.png');
+  background-color: #232323;
+}
+#canvas-title{
+  background-image: url('./Components/Images/Canvas.PNG');
+  background-size: contain;
+}
+#portfolio-title{
+  background-image: url("./Components/Images/node2.PNG");
+  background-color: black;
+}
+#monty-title{
+  background-image: url("./Components/Images/montyhall.png");
+  background-size: contain;
+}
+#router-title{
+  background-image: url("./Components/Images/routerimg.PNG");
+}
+#soldier-proj{
+  background-image: url('./Components/Images/caf.jpg');
 }
 
 /****************************** Contact Page **************************************/
@@ -747,16 +765,16 @@ body{
   #Microserve-card, #Mohsen-card, #CAF-card, #downres-card{
     left: 5vw;
     width: 90vw;
-    height: 60;
+    height: 60vh;
   }
   #caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
-    height: 30vh;
+    height: 40vh;
   }
   #Mohsen-card{
-    top: 75vh;
+    top: 85vh;
   }
   #Microserve-card{
-    top: 130vh;
+    top: 150vh;
     margin-bottom: 10vh;
   }
   #downres-card{
@@ -836,7 +854,7 @@ body{
     width: 100vw;
   }
   #job-footer-space{
-    top: 183vh;
+    top: 213vh;
   }
   #proj-footer-space{
     top: 212vh;

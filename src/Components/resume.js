@@ -11,17 +11,32 @@ class Resume extends Component{
 
     toggleCategories(){
         if (this.state.activeTab === 0){
+            const company = {
+                fontSize: '4vh',
+                fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+            }
+    
+            const role = {
+                fontSize: '3vh',
+                fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+            }
+    
+            const description = {
+                fontSize: '4vh',
+                width: '90%',
+                lineHeight: '3vh'
+            }
             return(
                 <div className='resume-cards'>
                     <Card id='CAF-card' shadow={0}>
                         <CardTitle id='caf-title'> </CardTitle>
                         <CardText id='caf-text'>
                             <div className="resume-card-texts">
-                                <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> East Side Games Group </b> <br/>
-                                <b style={{fontSize: '3vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>DevOps Engineer </b><br/>
-                                <b>August 2021 - Present</b> <br/>
-                                <p style={{fontSize: '3vh'}}>Automate the creation and maintenance of AWS resources for the developers using GitOps. 
-                                Also managed several services like Jenkins, Datadog, Kubernetes, PlasticSCM, Atlantis, Ansible etc</p>
+                                <b style={company}> East Side Games Group </b> <br/>
+                                <b style={role}>DevOps Engineer </b><br/>
+                                <b>August 2021 - Present</b> <br/><br/>
+                                <p style={description}>Automate the creation and maintenance of AWS resources for the developers using GitOps. 
+                                Also managed several services like Jenkins, Datadog, Kubernetes, PlasticSCM, Atlantis, Ansible etc.</p>
                             </div>
                         </CardText>
                     </Card>
@@ -29,11 +44,11 @@ class Resume extends Component{
                         <CardTitle id='mohsen-title'> </CardTitle>
                         <CardText id='mohsen-text'> 
                             <div className="resume-card-texts">
-                                <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Procurify Inc </b><br/>
-                                <b style={{fontSize: '3vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>DevOps Intern </b><br/>
-                                <b>January 2021 - August 2021 </b><br/>
-                                <p style={{fontSize: '3vh'}}>Built custom exporters that collects logs and metrics from various development platforms such as
-                                SonarQube, CircleCI, Elasticsearch. Then integrated them to Grafana to create meaningful dashboards</p>
+                                <b style={company}> Procurify Inc </b><br/>
+                                <b style={role}>DevOps Intern </b><br/>
+                                <b>January 2021 - August 2021 </b><br/><br/>
+                                <p style={description}>Built custom exporters that collects logs and metrics from various development platforms such as
+                                SonarQube, CircleCI, Elasticsearch. Then integrated them to Grafana to create meaningful dashboards.</p>
                             </div>
                         </CardText>
                     </Card>
@@ -41,10 +56,10 @@ class Resume extends Component{
                         <CardTitle id='microserve-title'> </CardTitle>
                         <CardText id='microserve-text'> 
                             <div className="resume-card-texts">
-                                <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Canadian Armed Forces </b><br/>
-                                <b style={{fontSize: '3vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>Infantry Solider </b><br/>
-                                <b>October 2018 - March 2021 </b><br/>
-                                <p style={{fontSize: '3vh'}}>Trained for descipline and adaptability to the extreme conditions and stress.
+                                <b style={company}> Canadian Armed Forces </b><br/>
+                                <b style={role}>Infantry Solider </b><br/>
+                                <b>October 2018 - March 2021 </b><br/><br/>
+                                <p style={description}>Trained for descipline and adaptability to the extreme conditions and stress.
                                 Also practiced leadership skills such as communication, resource management and time management.</p>
                             </div>
                         </CardText>

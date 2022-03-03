@@ -8,16 +8,31 @@ class Projects extends Component{
     }
 
     toggleCategories(){
+        const title = {
+            fontSize: '4vh',
+            fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+        }
+
+        const date = {
+            fontSize: '2vh',
+            fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+        }
+
+        const description = {
+            fontSize: '4vh',
+            width: '90%',
+            lineHeight: '3vh'
+        }
         if (this.state.activeTab === 0){
             return(
                 <div className='resume-tab'>
                     <Card id='CAF-card1' shadow={0}>
                         <CardTitle id='automo-proj'> </CardTitle>
-                        <CardText id='mohsen-text'>
-                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> AutoMo BC </b> <br/>
-                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>October 2019 - Present</b>
-                            <p style={{fontSize: '3vh', width: '90%'}}> A production environment web application that serves end users
-                            trying to book a vehicle service appointment with AutoMo BCand stores provided data in a Relational Database.<br/>
+                        <CardText id='mohsen-text1'>
+                            <b style={title}> AutoMo BC </b> <br/>
+                            <b style={date}>October 2019 - Present</b>
+                            <p style={description}> A production environment website
+                            to book a service appointment with AutoMo BC and stores provided data in a Relational Database.<br/><br/>
                             <b>Skills:</b> HTML, CSS, JavaScript, PHP, SQL, Database Desgining <br/></p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
@@ -32,10 +47,10 @@ class Projects extends Component{
                     <Card id='Mohsen-card1' shadow={0}>
                         <CardTitle id='canvas-title'> </CardTitle>
                         <CardText id='canvas-text'> 
-                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Colaborative Canvas </b> <br/>
-                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>April 2020 - June 2020</b>
-                            <p style={{fontSize: '3vh', width: '90%'}}>A social media platform that allows users to visit each other's
-                            canvases and see, create, update and delete pixels to create art! <br/>
+                            <b style={title}> Colaborative Canvas </b> <br/>
+                            <b style={date}>April 2020 - June 2020</b>
+                            <p style={description}>A social media platform that allows users to visit each other's
+                            canvases and see, create, update and delete pixels to create art! <br/><br/>
                             <b>Skills:</b> Python, Peewee ORM, Flask Web Framework, SQLite Database, Mocha  </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
@@ -50,10 +65,10 @@ class Projects extends Component{
                     <Card id='Microserve-card1' shadow={0}>
                         <CardTitle id='portfolio-title'> </CardTitle>
                         <CardText id='portfolio-text'> 
-                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Portfolio </b> <br/>
-                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>June 2020 - Present</b>
-                            <p style={{fontSize: '3vh', width: '90%'}}>This beautiful piece of art right here ... Picasso! 
-                            Contact me to place your ads on this website!<br/>
+                            <b style={title}> Portfolio </b> <br/>
+                            <b style={date}>June 2020 - Present</b>
+                            <p style={description}>This beautiful piece of art right here ... Picasso! 
+                            Contact me to place your ads on this website!<br/><br/>
                             <b>Skills:</b> React, HTML, CSS, JaveScript, GitHub, Material UI, React MDL, CloudFlare, Hostinger, cPanels </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
@@ -74,10 +89,10 @@ class Projects extends Component{
                 <div className='resume-tab'>
                     <Card id='CAF-card1' shadow={0}>
                         <CardTitle id='soldier-proj'> </CardTitle>
-                        <CardText id='caf-text'>
-                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>Soldier Deployment</b> <br/>
-                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>January 2020 - April 2020</b>
-                            <p style={{fontSize: '3vh', width: '90%'}}>A python based software that uses tkinter Graphical User Interface to
+                        <CardText id='caf-text1'>
+                            <b style={title}>Soldier Deployment</b> <br/>
+                            <b style={date}>January 2020 - April 2020</b>
+                            <p style={description}>A python based software that uses tkinter Graphical User Interface to
                             help track soldier deployments locations and status. <br/>
                             <b>Skills:</b> Python, Peewee ORM, SQLite DB, Test Driven Development, Flask RESTful API, Postman </p>
                         </CardText>
@@ -90,9 +105,9 @@ class Projects extends Component{
                     <Card id='Mohsen-card1' shadow={0}>
                         <CardTitle id='monty-title'> </CardTitle>
                         <CardText id='monty-text'> 
-                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Monty Hall Simulaton </b> <br/>
-                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>February 2020 - March 2020</b>
-                            <p style={{fontSize: '3vh', width: '90%'}}>An RLab experiment that runs the monty hall problem a set number of times
+                            <b style={title}> Monty Hall Simulaton </b> <br/>
+                            <b style={date}>February 2020 - March 2020</b>
+                            <p style={description}>An RLab experiment that runs the monty hall problem a set number of times
                             and reports the results to confirm the decision of switching the door when given the option to <br/>
                             <b>Skills:</b> Problem Solving, RLab </p>
                         </CardText>
@@ -105,9 +120,9 @@ class Projects extends Component{
                     <Card id='Microserve-card1' shadow={0}>
                         <CardTitle id='router-title'> </CardTitle>
                         <CardText id='router-text'> 
-                            <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Virtual Router </b> <br/>
-                            <b style={{fontSize: '2vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}>January 2020 - April 2020</b>
-                            <p style={{fontSize: '3vh', width: '90%'}}>Create a router for a virtual network built on Raspberry Pi. Then
+                            <b style={title}> Virtual Router </b> <br/>
+                            <b style={date}>January 2020 - April 2020</b>
+                            <p style={description}>Create a router for a virtual network built on Raspberry Pi. Then
                             tested it by adding multiple CentOS VM clients to the network<br/>
                             <b>Skills:</b> VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
                         </CardText>
