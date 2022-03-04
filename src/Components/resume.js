@@ -48,7 +48,7 @@ class Resume extends Component{
                                 <b style={role}>DevOps Intern </b><br/>
                                 <b>January 2021 - August 2021 </b><br/><br/>
                                 <p style={description}>Built custom exporters that collects logs and metrics from various development platforms such as
-                                SonarQube, CircleCI, Elasticsearch. Then integrated them to Grafana to create meaningful dashboards.</p>
+                                SonarQube, CircleCI, Elasticsearch. Then use them to make monitoring dashboards in Grafana.</p>
                             </div>
                         </CardText>
                     </Card>

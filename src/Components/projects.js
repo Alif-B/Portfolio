@@ -36,12 +36,12 @@ class Projects extends Component{
                             <b>Skills:</b> HTML, CSS, JavaScript, PHP, SQL, Database Desgining <br/></p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/AutoMo.git'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='https://automobc.ca'>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
-                        </a>
+                            <a href='https://github.com/Alif-B/AutoMo.git'>
+                                <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
+                            </a>
+                            <a href='https://automobc.ca'>
+                                <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
+                            </a>
                         </CardActions>
                     </Card>
                     <Card id='Mohsen-card1' shadow={0}>
@@ -54,12 +54,12 @@ class Projects extends Component{
                             <b>Skills:</b> Python, Peewee ORM, Flask Web Framework, SQLite Database, Mocha  </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/crockk/collaborative-canvas.git'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='https://acit2911-canvas.herokuapp.com/'>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
-                        </a>
+                            <a href='https://github.com/crockk/collaborative-canvas.git'>
+                                <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
+                            </a>
+                            <a href='https://acit2911-canvas.herokuapp.com/'>
+                                <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
+                            </a>
                         </CardActions>
                     </Card>
                     <Card id='Microserve-card1' shadow={0}>
@@ -72,12 +72,12 @@ class Projects extends Component{
                             <b>Skills:</b> React, HTML, CSS, JaveScript, GitHub, Material UI, React MDL, CloudFlare, Hostinger, cPanels </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/Portfolio'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='/'>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
-                        </a>
+                            <a href='https://github.com/Alif-B/Portfolio'>
+                                <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
+                            </a>
+                            <a href='/'>
+                                <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
+                            </a>
                         </CardActions>
                     </Card>
                     <div id='proj-footer-space'/>
@@ -97,9 +97,9 @@ class Projects extends Component{
                             <b>Skills:</b> Python, Peewee ORM, SQLite DB, Test Driven Development, Flask RESTful API, Postman </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/Soldier-Management.git'>
-                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
-                        </a>
+                            <a href='https://github.com/Alif-B/Soldier-Management.git'>
+                                <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
+                            </a>
                         </CardActions>
                     </Card>
                     <Card id='Mohsen-card1' shadow={0}>
@@ -112,9 +112,9 @@ class Projects extends Component{
                             <b>Skills:</b> Problem Solving, RLab </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/MontyHall'>
-                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
-                        </a>
+                            <a href='https://github.com/Alif-B/MontyHall'>
+                                <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
+                            </a>
                         </CardActions>
                     </Card>
                     <Card id='Microserve-card1' shadow={0}>
@@ -127,9 +127,9 @@ class Projects extends Component{
                             <b>Skills:</b> VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
                         </CardText>
                         <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='#navbar'>
-                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored> Not Applicable </Button>
-                        </a>
+                            <a href='#navbar'>
+                                <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored> Not Applicable </Button>
+                            </a>
                         </CardActions>
                     </Card>
                     <div id='proj-footer-space'/>

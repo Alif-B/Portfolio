@@ -400,6 +400,10 @@ body{
   background: -webkit-linear-gradient(#414345, #000000);
   background: linear-gradient(#414345, #000000);
 }
+#caf-text1{
+  background: -webkit-linear-gradient(#154100, #000000);
+  background: linear-gradient(#154100, #000000);
+}
 
 /* -------------- Hobbies ----------------*/
 .hobbies{
@@ -441,7 +445,7 @@ body{
   top: 20vh;
   left: 7.5vw;
   width: 25vw;
-  height: 50vh;
+  height: 60vh;
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
 }
@@ -454,7 +458,7 @@ body{
 }
 #canvas-text, #portfolio-text, #monty-text, #router-text, #mohsen-text1, #caf-text1{
   width: 94%;
-  height: 20vh;
+  height: 21vh;
   color: white;
   font-family: 'Chathura', sans-serif;
   font-size: 4vh;
