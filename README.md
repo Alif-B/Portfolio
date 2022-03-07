@@ -1,3 +1,12 @@
+# Alif's Portfolio
+
+This is the source code for my portfolio.
+
+
+The deployed website can be found here - https://alif.link/
+
+# React Specific Stuff
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

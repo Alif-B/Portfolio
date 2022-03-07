@@ -449,6 +449,61 @@ body{
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
 }
+
+/*********** All the Hover stuff ********/
+.projectHoverItems{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.projectHoverItems:hover{
+  animation: projectHover 0.5s forwards;
+}
+@keyframes projectHover{
+  from  {opacity: 0;}
+  to    {opacity: 1;}
+}
+/* @keyframes projectProofHover {
+  from  {background-color:rgba(0,0,0,0.8);}
+  to    {background-color:rgba(0,0,0,0.95);}
+} */
+.hoveringDiv{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color:rgba(0,0,0,0.8);
+  background-image: url("./Components/Images/github-hover.png");
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+#naHoverFull{
+  height: 100%;
+  background-image: url("./Components/Images/NA-hover.png");
+}
+#naHoverFull:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+#gitHubHoverFull{
+  height: 100%;
+}
+#gitHubHoverFull:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+#gitHubHover:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+#liveDemoHover{
+  top: 50%;
+  background-image: url("./Components/Images/demo-hover.png");
+}
+#liveDemoHover:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+
+/********* Hover stuff ends here ********/ 
 #automo-proj, #canvas-title, #portfolio-title, 
 #monty-title, #router-title,  #soldier-proj{
   background-image: url('./Components/Images/esg.png');
@@ -458,7 +513,7 @@ body{
 }
 #canvas-text, #portfolio-text, #monty-text, #router-text, #mohsen-text1, #caf-text1{
   width: 94%;
-  height: 21vh;
+  height: 30vh;
   color: white;
   font-family: 'Chathura', sans-serif;
   font-size: 4vh;
