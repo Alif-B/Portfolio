@@ -75,6 +75,10 @@ class Skills extends Component {
                         <img alt='logo' class="mdl-chip__contact" src='/Skills/Visio.png'/>
                     </ChipContact> Microsoft Visio&nbsp;&nbsp;&nbsp;
                     </Chip>
+                    <Chip className='devops-chip'><ChipContact>
+                        <img alt='logo' class="mdl-chip__contact" src='/Skills/prometheus.png'/>
+                    </ChipContact> Prometheus&nbsp;&nbsp;&nbsp;
+                    </Chip>
                     <Chip className='dev-chip'><ChipContact>
                         <img alt='logo' class="mdl-chip__contact" src='/Skills/JavaScript.png'/>
                     </ChipContact> JavaScript&nbsp;&nbsp;&nbsp;
