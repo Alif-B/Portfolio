@@ -14,13 +14,13 @@ const useStyles = makeStyles({
   },
 });
 
-const styles = {
-  stickToBottom: {
-    width: '100%',
-    position: 'fixed',
-    bottom: 0,
-  },
-};
+// const styles = {
+//   stickToBottom: {
+//     width: '100%',
+//     position: 'fixed',
+//     bottom: 0,
+//   },
+// };
 
 export default function LabelBottomNavigation() {
   const classes = useStyles();
@@ -31,7 +31,7 @@ export default function LabelBottomNavigation() {
   };
 
   return (
-    <BottomNavigation id='mobile_nav' className={classes.stickToBottom} value={value} onChange={handleChange} className={classes.root}>
+    <BottomNavigation id='mobile_nav' className={classes.stickToBottom} value={value} onChange={handleChange}>
       <BottomNavigationAction href='/about' id='nav_icons' icon={<PersonIcon />} />
       <BottomNavigationAction href='/resume' id='nav_icons' icon={<ReceiptIcon />} />
       <BottomNavigationAction href='/skills' id='nav_icons' icon={<BuildIcon />} />

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Tabs, Tab, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
 import ReactWordcloud from 'react-wordcloud';
-import ResumePDF from './Images/Resume.pdf'
+import ResumePDF from './Images/Resume.pdf';
 
 class Resume extends Component{
     constructor(props){
@@ -11,59 +11,89 @@ class Resume extends Component{
 
     toggleCategories(){
         if (this.state.activeTab === 0){
+            const company = {
+                fontSize: '4vh',
+                fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+            }
+    
+            const role = {
+                fontSize: '3vh',
+                fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+            }
+    
+            const description = {
+                fontSize: '4vh',
+                width: '90%',
+                lineHeight: '3vh'
+            }
             return(
                 <div className='resume-cards'>
-                    <Card id='SFU-card' shadow={10}>
-                        <CardTitle id='sfu-title'> </CardTitle>
-                        <CardText id='sfu-text'>
-                            <p className='school_cards'> Simon Fraser University </p>
-                            Faculty of Applied Sciences <br/>
-                            Computer Enginnering <br/>
-                            September 2015 - April 2018 
+                    <Card id='CAF-card' shadow={0}>
+                        <CardTitle id='caf-title'> </CardTitle>
+                        <CardText id='caf-text'>
+                            <div className="resume-card-texts">
+                                <b style={company}> East Side Games Group </b> <br/>
+                                <b style={role}>DevOps Engineer </b><br/>
+                                <b>August 2021 - Present</b> <br/><br/>
+                                <p style={description}>Automate the creation and maintenance of AWS resources for the developers using GitOps. 
+                                Also managed several services like Jenkins, Datadog, Kubernetes, PlasticSCM, Atlantis, Ansible etc.</p>
+                            </div>
                         </CardText>
                     </Card>
-                    <Card id='BCIT-card' shadow={10}>
-                        <CardTitle id='bcit-title'> </CardTitle>
-                        <CardText id='bcit-text'> 
-                            <p className='school_cards'>British Columbia Institute of Technology </p>
-                            Computer Information Technology (C.I.T) <br/>
-                            September 2019 - April 2021 <br/>
-                            Graduation Date: April 2021
+                    <Card id='Mohsen-card' shadow={0}>
+                        <CardTitle id='mohsen-title'> </CardTitle>
+                        <CardText id='mohsen-text'> 
+                            <div className="resume-card-texts">
+                                <b style={company}> Procurify Inc </b><br/>
+                                <b style={role}>DevOps Intern </b><br/>
+                                <b>January 2021 - August 2021 </b><br/><br/>
+                                <p style={description}>Built custom exporters that collects logs and metrics from various development platforms such as
+                                SonarQube, CircleCI, Elasticsearch. Then use them to make monitoring dashboards in Grafana.</p>
+                            </div>
                         </CardText>
                     </Card>
+                    <Card id='Microserve-card' shadow={0}>
+                        <CardTitle id='microserve-title'> </CardTitle>
+                        <CardText id='microserve-text'> 
+                            <div className="resume-card-texts">
+                                <b style={company}> Canadian Armed Forces </b><br/>
+                                <b style={role}>Infantry Solider </b><br/>
+                                <b>October 2018 - March 2021 </b><br/><br/>
+                                <p style={description}>Trained for descipline and adaptability to the extreme conditions and stress.
+                                Also practiced leadership skills such as communication, resource management and time management.</p>
+                            </div>
+                        </CardText>
+                    </Card>
+                    <div id='job-footer-space'></div>
                 </div>
             )
         }
         else if (this.state.activeTab === 1){
             return(
                 <div className='resume-cards'>
-                    <Card id='CAF-card' shadow={0}>
-                        <CardTitle id='caf-title'> </CardTitle>
-                        <CardText id='caf-text'>
-                            <p style={{fontSize: '6vh'}}> Canadian Armed Forces </p>
-                            Infantry Solider <br/>
-                            October 2018 - Present <br/>
-                            Training on descipline and is adaptable to the extreme conditions
+                    <Card id='SFU-card' shadow={10}>
+                        <CardTitle id='sfu-title'> </CardTitle>
+                        <CardText id='sfu-text'>
+                            <div className="resume-card-texts">
+                                <p className='school_cards'> Simon Fraser University </p>
+                                Faculty of Applied Sciences <br/>
+                                Computer Enginnering <br/>
+                                September 2015 - April 2018 
+                            </div>
                         </CardText>
                     </Card>
-                    <Card id='Microserve-card' shadow={0}>
-                        <CardTitle id='microserve-title'> </CardTitle>
-                        <CardText id='microserve-text'> 
-                            <p style={{fontSize: '6vh'}}> Microserve Inc </p>
-                            Deployment Technician <br/>
-                            June 2017 - Jan 2018 <br/>
-                            Setting up and troubleshooting computers/servers while providing technical support
+                    <Card id='BCIT-card' shadow={10}>
+                        <CardTitle id='bcit-title'> </CardTitle>
+                        <CardText id='bcit-text'> 
+                            <div className="resume-card-texts">
+                                <p className='school_cards'>British Columbia Institute of Technology </p>
+                                Computer Information Technology (C.I.T) <br/>
+                                September 2019 - April 2021 <br/>
+                                Graduation Date: April 2021
+                            </div>
                         </CardText>
                     </Card>
-                    <Card id='Mohsen-card' shadow={0}>
-                        <CardTitle id='mohsen-title'> </CardTitle>
-                        <CardText id='mohsen-text'> 
-                            <p style={{fontSize: '6vh'}}> AutoMo </p>
-                            Website Developer <br/>
-                            May 2020 - Present <br/>
-                            Building, Deploying and Maintaing a website for a client while providing ongoing support
-                        </CardText>
-                    </Card>
+                    <div id='edu-footer-space'></div>
                 </div>
             )
         }
@@ -107,10 +137,15 @@ class Resume extends Component{
                 width: '50vw',
                 enableTooltip: false
             };
+            const cloudStyle = {
+                position: 'relative', 
+                top: '5vh',
+                backgroundColor: 'rgba(0,0,0,0.8)'
+            };
             return(
                 <div className='hobbies'>
-                    I am a man of many hobbies. So enjoy this wordcloud!
-                    <ReactWordcloud id='wordcloud' words={words} options={options} style={{position: 'absolute', top: '10vh'}} />
+                    <b>When I am not DevOps-ing... <br/><br/>You can find me doing one of the following!</b>
+                    <ReactWordcloud id='wordcloud' words={words} options={options} style={cloudStyle} />
                 </div>
             )
         }
@@ -119,8 +154,10 @@ class Resume extends Component{
                 <Card id='downres-card' shadow={0}>
                     <CardTitle id='downres-title'> </CardTitle>
                     <CardText id='downres-text'> 
-                        <p style={{fontSize: '6vh'}}> Full Resume </p>
-                        In Portable Document Format <br/>
+                        <div className="resume-card-texts">
+                        <b style={{fontSize: '4vh', fontFamily: "'ZCOOL QingKe HuangYou', cursive"}}> Full Resume </b> <br/>
+                            In Portable Document Format <br/>
+                        </div>
                     </CardText>
                     <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
                         <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
@@ -142,10 +179,10 @@ class Resume extends Component{
                     <p className='current-page'>Resume</p>
                 </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
+                    <Tab id='tababo'> Experience </Tab>
                     <Tab id='tababo'> Education </Tab>
-                    <Tab id='tababo'> Work Experience </Tab>
                     <Tab id='tababo'> Hobbies </Tab>
-                    <Tab id='tababo'> Download </Tab>
+                    <Tab id='tababo'> Resume </Tab>
                 </Tabs>
                 <section>
                     <div className='content'>{this.toggleCategories()}</div>

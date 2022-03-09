@@ -3,11 +3,18 @@ font-family: 'Amatic SC', cursive;
 font-family: 'Chathura', sans-serif;
 font-family: 'Lobster', cursive;
 font-family: 'Walter Turncoat', cursive;
+font-family: 'ZCOOL QingKe HuangYou', cursive;
 */
 #navbar{
-  background-color:rgba(0,0,0,0.7);
-  font-family: 'Amatic SC', cursive;
-  font-size: 70vw;
+  background-color:rgba(0,0,0,0.9);
+  font-family: 'Chathura', sans-serif;
+}
+@keyframes bgColorChange{
+  to    { background-color: #5D12A6; }
+}
+@keyframes bgColorChangeBack{
+  from  { background-color: #5D12A6; }
+  to    { background-color: transparent; }
 }
 #mobile_nav{
   z-index: -100;
@@ -23,8 +30,8 @@ font-family: 'Walter Turncoat', cursive;
 }
 
 body{
-  background-color: black;
-  background-image: url('./Components/Images/computer_bg2.jpg');
+  background-color:rgba(0,0,0,0.9);
+  background-image: url('./Components/Images/desktop_bg.jpeg');
   background-size: cover;
 }
 
@@ -89,7 +96,7 @@ body{
   color: transparent;
   position: absolute;
   top: -10vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   width: 0vw;
   margin-left: 30vw;
   height: 42vh;
@@ -178,7 +185,7 @@ body{
 /* ---------------------- About Me Page ------------------------ */
 #id_card, #contact_card{
   /* background-color:rgba(0,0,0,0.7); */
-  background-image: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 55%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%);
+  background-image: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%);
   font-family: 'Chathura', sans-serif;
   font-size: 10vh;
   position: absolute;
@@ -203,18 +210,31 @@ body{
 
 .about_text{
   position: relative;
-  top: 60%;
-  font-family: 'Chathura', sans-serif;
-  font-size: 8vh;
+  top: 20%;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 6vh;
   color: white;
+  line-height: 4vh;
 }
 #about2{
-  font-size: 6vh;
+  font-size: 4vh;
 }
 #about3{
   font-size: 4vh;
   width: 86%;
   left: 7%;
+  line-height: 3.5vh;
+  font-family: 'Chathura', sans-serif;
+}
+#about_div{
+  position: relative;
+  height: 45%;
+  top: 55%;
+}
+#about_inside_div{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /**************************** Resume Page ******************************/
@@ -223,7 +243,8 @@ body{
   color: white;
   border-color: transparent;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
 }
 #tababo{
   color: white;
@@ -240,6 +261,11 @@ body{
   height: 50vh;
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
+}
+.resume-card-texts{
+  position: relative;
+  top: 47%;
+  transform: translateY(-50%);
 }
 #sfu-title{
   background-image: url('./Components/Images/sfu.jpg');
@@ -291,15 +317,32 @@ body{
   line-height: 3vh;
 }
 
-/* -------------Work Cards------------ */
+/* -------------Job Cards------------ */
 #Microserve-card, #Mohsen-card, #CAF-card, #downres-card{
   position: absolute;
   top: 20vh;
   left: 7.5vw;
   width: 25vw;
-  height: 50vh;
+  height: 60vh;
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
+}
+#microserve-title, #caf-title, #mohsen-title, #downres-title{
+  background-image: url('./Components/Images/esg.png');
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+#caf-text, #microserve-text, #mohsen-text, #downres-text{
+  background: -webkit-linear-gradient(#0000AE, #000000);
+  background: linear-gradient(#0000AE, #000000);
+  width: 94%;
+  height: 30vh;
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+  line-height: 3vh;
+  left: 3%;
 }
 #Mohsen-card{
   left: 37.5vw;
@@ -314,56 +357,25 @@ body{
 
 
 /* ---------------Card Title Boxes-------------- */
-#caf-title, #microserve-title, #mohsen-title, #downres-title, #canvas-title, #portfolio-title, #monty-title, #router-title{
-  background-image: url('./Components/Images/caf.png');
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
-}
 #microserve-title{
-  background-image: url('./Components/Images/microserve.png');
+  background-image: url('./Components/Images/caf.jpg');
 }
 #mohsen-title{
-  background-image: url('./Components/Images/AutoMo.png');
+  background-image: url('./Components/Images/procurify.png');
   background-color: #232323;
-}
-#canvas-title{
-  background-image: url('./Components/Images/Canvas.PNG');
-  background-size: contain;
 }
 #downres-title{
   background-image: url("./Components/Images/resume.PNG");
   height: 70vh;
   background-position: left;
 }
-#portfolio-title{
-  background-image: url("./Components/Images/node2.PNG");
-  background-color: black;
-}
-#monty-title{
-  background-image: url("./Components/Images/montyhall.png");
-  background-size: contain;
-}
-#router-title{
-  background-image: url("./Components/Images/routerimg.PNG");
-}
+
 
 
 /* -------------Card Textboxes-------------- */
-#caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
+#microserve-text{
   background: -webkit-linear-gradient(#154100, #000000);
   background: linear-gradient(#154100, #000000);
-  width: 94%;
-  height: 20vh;
-  color: white;
-  font-family: 'Chathura', sans-serif;
-  font-size: 4vh;
-  line-height: 3vh;
-  left: 3%;
-}
-#microserve-text{
-  background: -webkit-linear-gradient(#021b79, #000000);
-  background: linear-gradient(#021b79, #000000);
 }
 #mohsen-text{
   background: -webkit-linear-gradient(#404040, #000000);
@@ -389,14 +401,18 @@ body{
   background: -webkit-linear-gradient(#414345, #000000);
   background: linear-gradient(#414345, #000000);
 }
+#caf-text1{
+  background: -webkit-linear-gradient(#154100, #000000);
+  background: linear-gradient(#154100, #000000);
+}
 
 /* -------------- Hobbies ----------------*/
 .hobbies{
   text-align: center;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 4vh;
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   width: 85vw;
   left: 7.5vw;
 }
@@ -410,7 +426,7 @@ body{
   left: 15vw;
   text-align: center;
 }
-.language-chip, .tool-chip, .software-chip{
+.dev-chip, .devops-chip, .general-chip{
   margin-right: 1em;
   padding-right: 1em;
 }
@@ -434,17 +450,115 @@ body{
   font-family: 'Chathura', sans-serif;
   background-color: transparent;
 }
+
+/*********** All the Hover stuff ********/
+.projectHoverItems{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.projectHoverItems:hover{
+  animation: projectHover 0.5s forwards;
+}
+@keyframes projectHover{
+  from  {opacity: 0;}
+  to    {opacity: 1;}
+}
+/* @keyframes projectProofHover {
+  from  {background-color:rgba(0,0,0,0.8);}
+  to    {background-color:rgba(0,0,0,0.95);}
+} */
+.hoveringDiv{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color:rgba(0,0,0,0.8);
+  background-image: url("./Components/Images/github-hover.png");
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+#naHoverFull{
+  height: 100%;
+  background-image: url("./Components/Images/NA-hover.png");
+}
+#naHoverFull:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+#gitHubHoverFull{
+  height: 100%;
+}
+#gitHubHoverFull:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+#gitHubHover:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+#liveDemoHover{
+  top: 50%;
+  background-image: url("./Components/Images/demo-hover.png");
+}
+#liveDemoHover:hover{
+  animation: projectProofHover 0.5s forwards;
+}
+
+/********* Hover stuff ends here ********/ 
+#automo-proj, #canvas-title, #portfolio-title, 
+#monty-title, #router-title,  #soldier-proj{
+  background-image: url('./Components/Images/esg.png');
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+#canvas-text, #portfolio-text, #monty-text, #router-text, #mohsen-text1, #caf-text1{
+  width: 94%;
+  height: 30vh;
+  color: white;
+  font-family: 'Chathura', sans-serif;
+  font-size: 4vh;
+  line-height: 3vh;
+  left: 3%;
+}
+#mohsen-text1{
+  background: -webkit-linear-gradient(#0000AE, #000000);
+  background: linear-gradient(#0000AE, #000000);
+}
 #Mohsen-card1{
   left: 37.5vw;
 }
 #Microserve-card1{
   left: 67.5vw;
 }
+#automo-proj{
+  background-image: url('./Components/Images/AutoMo.png');
+  background-color: #232323;
+}
+#canvas-title{
+  background-image: url('./Components/Images/Canvas.PNG');
+  background-size: contain;
+}
+#portfolio-title{
+  background-image: url("./Components/Images/node2.PNG");
+  background-color: black;
+}
+#monty-title{
+  background-image: url("./Components/Images/montyhall.png");
+  background-size: contain;
+}
+#router-title{
+  background-image: url("./Components/Images/routerimg.PNG");
+}
+#soldier-proj{
+  background-image: url('./Components/Images/caf.jpg');
+}
 
 /****************************** Contact Page **************************************/
 #contact-div{
   position: absolute;
-  top: 75%;
+  top: 65%;
+  transform: translateY(-50%);
   width: 100%;
   height: 10vh;
   text-align: center;
@@ -462,7 +576,8 @@ body{
 }
 #actual_contact{
   position: absolute;
-  top: 92%;
+  top: 98%;
+  transform: translateY(-50%);
   height: 10vh;
   width: 100%;
   font-size: 5vh;
@@ -494,8 +609,8 @@ body{
 ******************************************************************************************/
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .background-video{
-    object-fit: cover;
+  body{
+    background-image: url('./Components/Images/mobile_bg.jpg');
   }
   #mobile-app-bar{
     z-index: 10;
@@ -527,8 +642,9 @@ body{
     z-index: 100;
   }
   .current-page{
-    font-family: 'Amatic SC', cursive;
-    font-size: 2vh;
+    font-family: 'Chathura', sans-serif;
+    font-size: 3.5vh;
+    font-weight: 600;
     right: 5vw;
     color: white;
     position: absolute;
@@ -543,7 +659,7 @@ body{
     z-index: 10;
     visibility: visible;
     position: fixed;
-    height: 8.2vh;
+    height: 7.8vh;
     bottom: -1.1vh;
     width: 100.2vw;
     background-color:black;
@@ -662,9 +778,12 @@ body{
   }
 
   .about_text{
-    top: 45%;
+    top: -5vh;
     font-size: 6vh;
     line-height: 4vh;
+  }
+  #about1{
+    line-height: 6vh;
   }
   #about2{
     font-size: 4vh;
@@ -694,7 +813,6 @@ body{
     top: 77vh;
     left: 5vw;
     width: 90vw;
-    margin-bottom: 10vh;
   }
   
   /* -------------BCIT CARD------------- */
@@ -707,12 +825,16 @@ body{
   #Microserve-card, #Mohsen-card, #CAF-card, #downres-card{
     left: 5vw;
     width: 90vw;
+    height: 60vh;
+  }
+  #caf-text, #microserve-text, #mohsen-text, #downres-text, #canvas-text, #portfolio-text, #monty-text, #router-text{
+    height: 40vh;
   }
   #Mohsen-card{
-    top: 75vh;
+    top: 85vh;
   }
   #Microserve-card{
-    top: 130vh;
+    top: 150vh;
     margin-bottom: 10vh;
   }
   #downres-card{
@@ -723,19 +845,16 @@ body{
     top: 17vh;
     line-height: 5vh;
     width: 90vw;
-    left: 5vw;;
-    background-color: rgba(0, 0, 0, 0.7);
+    left: 5vw;
   }
   #wordcloud{
-    height: 63vh;
-    width: 90vw;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 10vh;
+    height: 60vh;
+    margin-bottom: 17vh;
+    border-radius: 10px;
   }
   /*********************************** Skills Page *************************************/
   #skills{
     width: 90vw;
-    background-color: rgba(0, 0, 0, 0.7);
     height: auto;
     top: 35vh;
     left: 5vw;
@@ -758,14 +877,14 @@ body{
   }
   /********************************** Contact Page **************************************/
   #contact-div{
-    top: 65%;
+    top: 80%;
     height: 20vh;
   }
   .contact_icons{
     height: 15vw;
     width: 15vw;
     left: 22%;
-    top: 1vh;
+    top: -8vh;
   }
   #actual_contact{
     top: 92%;
@@ -781,10 +900,23 @@ body{
   }
   #linkedin_icon{
     left: 31%;
-    top: 11vh
+    top: 0vh
   }
   #skype_icon{
     left: 51%;
-    top: 11vh;
+    top: 0vh;
+  }
+
+  #edu-footer-space, #job-footer-space, #proj-footer-space{
+    position: absolute;
+    top: 130vh;
+    height: 10vh;
+    width: 100vw;
+  }
+  #job-footer-space{
+    top: 213vh;
+  }
+  #proj-footer-space{
+    top: 212vh;
   }
 }

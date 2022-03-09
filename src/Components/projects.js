@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Tabs, Tab, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
+import {Tabs, Tab, Card, CardTitle, CardText} from 'react-mdl';
 
 class Projects extends Component{
     constructor(props){
@@ -8,60 +8,68 @@ class Projects extends Component{
     }
 
     toggleCategories(){
+        const title = {
+            fontSize: '4vh',
+            fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+        }
+
+        const date = {
+            fontSize: '2vh',
+            fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+        }
+
+        const description = {
+            fontSize: '4vh',
+            width: '90%',
+            lineHeight: '3vh'
+        }
         if (this.state.activeTab === 0){
             return(
                 <div className='resume-tab'>
+                
                     <Card id='CAF-card1' shadow={0}>
-                        <CardTitle id='mohsen-title'> </CardTitle>
-                        <CardText id='mohsen-text'>
-                            <p style={{fontSize: '6vh'}}> AutoMo BC </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}> Building, Deploying and Maintaing a website for a client while providing ongoing support <br/>
-                            October 2019 - Present <br/>
-                            Skills: HTML, CSS, JavaScript, PHP, SQL <br/></p>
+                        <div className='projectHoverItems'>
+                            <a href='https://github.com/Alif-B/AutoMo.git'><div id="gitHubHover" className='hoveringDiv'></div></a>
+                            <a href='https://automobc.ca/'><div id="liveDemoHover" className='hoveringDiv'></div></a>
+                        </div>
+                        <CardTitle id='automo-proj'> </CardTitle>
+                        <CardText id='mohsen-text1'>
+                            <b style={title}> AutoMo BC </b> <br/>
+                            <b style={date}>October 2019 - Present</b>
+                            <p style={description}> A production environment website
+                            to book a service appointment with AutoMo BC and stores provided data in a Relational Database.<br/><br/>
+                            <b>Skills:</b> HTML, CSS, JavaScript, PHP, SQL, Database Desgining <br/></p>
                         </CardText>
-                        <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/AutoMo.git'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='https://automobc.ca'>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
-                        </a>
-                        </CardActions>
                     </Card>
-                    <Card id='Mohsen-card1' shadow={0}>
+                    <Card id='Mohsen-card1'  shadow={0}>
+                        <div className='projectHoverItems'>
+                            <a href='https://github.com/crockk/collaborative-canvas.git'><div id="gitHubHover" className='hoveringDiv'></div></a>
+                            <a href='https://acit2911-canvas.herokuapp.com/'><div id="liveDemoHover" className='hoveringDiv'></div></a>
+                        </div>
                         <CardTitle id='canvas-title'> </CardTitle>
                         <CardText id='canvas-text'> 
-                            <p style={{fontSize: '6vh'}}> Colaborative Canvas </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>A social media platform for pixel artists <br/>
-                            April 2020 - June 2020 <br/>
-                            Skills: Python, Peewee ORM, Flask Web Framework, SQLite Database, Travis Continious Integration, Git Workflow, Agile Development Method  </p>
+                            <b style={title}> Colaborative Canvas </b> <br/>
+                            <b style={date}>April 2020 - June 2020</b>
+                            <p style={description}>A social media platform that allows users to visit each other's
+                            canvases and see, create, update and delete pixels to create art! <br/><br/>
+                            <b>Skills:</b> Python, Peewee ORM, Flask Web Framework, SQLite Database, Mocha  </p>
                         </CardText>
-                        <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/crockk/collaborative-canvas.git'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='https://acit2911-canvas.herokuapp.com/'>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
-                        </a>
-                        </CardActions>
                     </Card>
                     <Card id='Microserve-card1' shadow={0}>
+                        <div className='projectHoverItems'>
+                            <a href='https://github.com/Alif-B/Portfolio'><div id="gitHubHover" className='hoveringDiv'></div></a>
+                            <a href='https://alif.link/'><div id="liveDemoHover" className='hoveringDiv'></div></a>
+                        </div>
                         <CardTitle id='portfolio-title'> </CardTitle>
                         <CardText id='portfolio-text'> 
-                            <p style={{fontSize: '6vh'}}> Portfolio </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>This beautiful piece of art right here <br/>
-                            June 2020 - Present <br/>
-                            Skills: React, HTML, CSS, Vanilla JS, GitHub, Material UI, React MDL </p>
+                            <b style={title}> Portfolio </b> <br/>
+                            <b style={date}>June 2020 - Present</b>
+                            <p style={description}>This beautiful piece of art right here ... Picasso! 
+                            Contact me to place your ads on this website!<br/><br/>
+                            <b>Skills:</b> React, HTML, CSS, JaveScript, GitHub, Material UI, React MDL, CloudFlare, Hostinger, cPanels </p>
                         </CardText>
-                        <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/Portfolio'>
-                            <Button style={{color: 'white', width: '50%'}} colored>GitHub</Button>
-                        </a>
-                        <a href='/'>
-                            <Button style={{color: 'white', width: '50%'}} colored>Live Demo</Button>
-                        </a>
-                        </CardActions>
                     </Card>
+                    <div id='proj-footer-space'/>
                 </div>
             )
         }
@@ -69,47 +77,45 @@ class Projects extends Component{
             return(
                 <div className='resume-tab'>
                     <Card id='CAF-card1' shadow={0}>
-                        <CardTitle id='caf-title'> </CardTitle>
-                        <CardText id='caf-text'>
-                            <p style={{fontSize: '6vh'}}> Soldier Deployment </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>A python based software that helps track soldier deployments locations and status <br/>
-                            January 2020 - April 2020 <br/>
-                            Skills: Python, Peewee ORM, SQLite DB, Test Driven Development, Flask RESTful API, Postman </p>
+                        <div className='projectHoverItems'>
+                            <a href='https://github.com/Alif-B/Soldier-Management.git'><div id="gitHubHoverFull" className='hoveringDiv'></div></a>
+                        </div>
+                        <CardTitle id='soldier-proj'> </CardTitle>
+                        <CardText id='caf-text1'>
+                            <b style={title}>Soldier Deployment</b> <br/>
+                            <b style={date}>January 2020 - April 2020</b>
+                            <p style={description}>A python based software that uses tkinter GUI Framework to
+                            track soldier deployments locations and status. <br/><br/>
+                            <b>Skills:</b> Python, Peewee ORM, SQLite DB, Test Driven Development, Flask RESTful API, Postman </p>
                         </CardText>
-                        <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/Soldier-Management.git'>
-                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
-                        </a>
-                        </CardActions>
                     </Card>
                     <Card id='Mohsen-card1' shadow={0}>
+                    <div className='projectHoverItems'>
+                        <a href='https://github.com/Alif-B/MontyHall'><div id="gitHubHoverFull" className='hoveringDiv'></div></a>
+                    </div>
                         <CardTitle id='monty-title'> </CardTitle>
                         <CardText id='monty-text'> 
-                            <p style={{fontSize: '6vh'}}> Monty Hall Problem Simulaton </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>An RLab experiment that runs the monty hall problem a set number of times <br/>
-                            February 2020 - March 2020 <br/>
-                            Skills: Problem Solving, RLab </p>
+                            <b style={title}> Monty Hall Simulaton </b> <br/>
+                            <b style={date}>February 2020 - March 2020</b>
+                            <p style={description}>An RLab experiment that runs the monty hall problem a set number of times
+                            and reports the results to confirm the decision of switching the door when given the option to <br/><br/>
+                            <b>Skills:</b> Problem Solving, RLab </p>
                         </CardText>
-                        <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='https://github.com/Alif-B/MontyHall'>
-                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored>GitHub</Button>
-                        </a>
-                        </CardActions>
                     </Card>
                     <Card id='Microserve-card1' shadow={0}>
+                        <div className='projectHoverItems'>
+                            <a href='#Microserve-card1'><div id="naHoverFull" className='hoveringDiv'></div></a>
+                        </div>
                         <CardTitle id='router-title'> </CardTitle>
                         <CardText id='router-text'> 
-                            <p style={{fontSize: '6vh'}}> Router </p>
-                            <p style={{fontSize: '4vh', width: '90%'}}>A fully functional router for Virtual Machine networks built by modifying CentOS Linux operating system<br/>
-                            January 2020 - April 2020 <br/>
-                            Skills: VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
+                            <b style={title}> Virtual Router </b> <br/>
+                            <b style={date}>January 2020 - April 2020</b>
+                            <p style={description}>Create a router for a virtual network built on Raspberry Pi. Then
+                            tested it by adding multiple CentOS VM clients to the network<br/><br/>
+                            <b>Skills:</b> VMWare, Vi/Vim, BASH Scripting, Windows Linux Subsystem, Windows Powershell </p>
                         </CardText>
-                        <CardActions style={{backgroundColor: 'black', textAlign: "left"}} border>
-                        <a href='#'>
-                            <Button style={{color: 'white', width: '100%', textAlign: 'center'}} colored> Not Applicable </Button>
-                        </a>
-                        </CardActions>
                     </Card>
+                    <div id='proj-footer-space'/>
                 </div>
             )
         }
@@ -120,7 +126,7 @@ class Projects extends Component{
             <div className='resume-tab'>
                 <div id='mobile-app-bar'>
                     <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
-                    <p className='current-page'>About me</p>
+                    <p className='current-page'>Projects</p>
                 </div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab: tabId})} ripple>
                     <Tab id='tababo'> Cloud </Tab>

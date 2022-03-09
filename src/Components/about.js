@@ -8,18 +8,22 @@ class About extends Component {
             <div>
                 <div id='mobile-app-bar'>
                     <a className='otherpage-alif' style={{textDecoration:'none'}} href='/'>  Alif  </a>
-                    <p className='current-page'>About me</p>
+                    <p className='current-page'>About Me</p>
                 </div>
                 <div id='id_card'>
                     <img id="beautiful_me" src={Me} alt='Me' /> 
-                    <p id='about1' className='about_text'> British Columbia Institue of Technology </p>
-                    <p id='about2' className='about_text'> Computer Information Technology (C.I.T) </p>
-                    <p id='about3' className='about_text'>
-                        As an IT student, I am fascinated by innovative ideas related to technology and the modern economy. 
-                        I am curious about how technology and the economy relate to each other and the impact they have 
-                        on our lives. I am an avid learner in search of novel ideas and always looking to accept new 
-                        challenges in my personal and professional life. Check out my resume to learn more about me.
-                    </p>
+                    <div id='about_div'>
+                        <div id='about_inside_div'>
+                            <p id='about1' className='about_text'> <b>East Side Games Group</b> </p>
+                            <p id='about2' className='about_text'> <b>DevOps Engineer</b> </p>
+                            <p id='about3' className='about_text'>
+                                Not only as an Engineer, but also a DevOps enthusiast, I am fascinated by innovative ideas and solutions 
+                                that technology gives us everyday. Some good, some bad, but all fascinating none the less. I am an avid
+                                learner in search of cool ideas and always looking to get my hands on the latest and greatest automation 
+                                tools. Check out my resume and LinkedIn to learn more about me.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
