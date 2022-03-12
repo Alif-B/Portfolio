@@ -69,13 +69,17 @@ class Resume extends Component{
             )
         }
         else if (this.state.activeTab === 1){
+            const company = {
+                fontSize: '4vh',
+                fontFamily: "'ZCOOL QingKe HuangYou', cursive"
+            }
             return(
                 <div className='resume-cards'>
                     <Card id='SFU-card' shadow={10}>
                         <CardTitle id='sfu-title'> </CardTitle>
                         <CardText id='sfu-text'>
                             <div className="resume-card-texts">
-                                <p className='school_cards'> Simon Fraser University </p>
+                                <p className='school_cards'> <b style={company}> Simon Fraser University </b> </p>
                                 Faculty of Applied Sciences <br/>
                                 Computer Enginnering <br/>
                                 September 2015 - April 2018 
@@ -86,7 +90,7 @@ class Resume extends Component{
                         <CardTitle id='bcit-title'> </CardTitle>
                         <CardText id='bcit-text'> 
                             <div className="resume-card-texts">
-                                <p className='school_cards'>British Columbia Institute of Technology </p>
+                                <p className='school_cards'> <b style={company}>BC Institute of Technology </b></p>
                                 Computer Information Technology (C.I.T) <br/>
                                 September 2019 - April 2021 <br/>
                                 Graduation Date: April 2021

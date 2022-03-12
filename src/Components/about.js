@@ -25,6 +25,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
+                <div id='about-footer-space'></div>
             </div>
         )
     }
