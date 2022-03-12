@@ -361,7 +361,7 @@ class Skills extends Component {
                     </ChipContact> Atlantis&nbsp;&nbsp;&nbsp;
                     </Chip>
                     <Chip className='devops-chip' style={chip}><ChipContact>
-                            <img alt='logo' class="mdl-chip__contact" src='/Skills/Ansible.jpg'/>
+                            <img alt='logo' class="mdl-chip__contact" src='/Skills/ansible.jpg'/>
                     </ChipContact> Ansible&nbsp;&nbsp;&nbsp;
                     </Chip>
                 </div>
