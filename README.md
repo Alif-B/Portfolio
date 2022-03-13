@@ -5,6 +5,19 @@ This is the source code for my portfolio.
 
 The deployed website can be found here - https://alif.link/
 
+[<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=2b9348">](https://github.com/SamKirkland/FTP-Deploy-Action)
+
+This application is being hosted on Hostinger hosting platform. There I have set up the an FTP access account.
+
+Upon push to the `deploy` branch, GitHub Actions will take over, build the react app on an Ubunut instance and 
+transfer the build content to my Hostinger server using FileTransfer Protocol (FTP).
+This way I can just push to deploy branch and not worry about manually deploying the website for every small change I want to see.
+
+
+
+
+
+
 # React Specific Stuff
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
