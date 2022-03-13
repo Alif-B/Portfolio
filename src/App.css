@@ -243,8 +243,6 @@ body{
   color: white;
   border-color: transparent;
   width: 100%;
-  min-height: 100%;
-  height: auto;
 }
 #tababo{
   color: white;
@@ -418,10 +416,17 @@ body{
 }
 
 /*********************************** Skills Page *************************************/
+#skills-container{
+  position: absolute;
+  top: 20vh;
+  height: 80vh;
+}
 #skills{
   width: 70vw;
-  height: 60vh;
-  position: absolute;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   top: 30vh;
   left: 15vw;
   text-align: center;
@@ -853,10 +858,15 @@ body{
     border-radius: 10px;
   }
   /*********************************** Skills Page *************************************/
+  #skills-container{
+    height:160vh;
+  }
   #skills{
     width: 90vw;
     height: auto;
-    top: 35vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     left: 5vw;
     margin-bottom: 10vh;
     padding-top: 2vh;
@@ -907,7 +917,7 @@ body{
     top: 0vh;
   }
 
-  #edu-footer-space, #job-footer-space, #proj-footer-space{
+  #edu-footer-space, #job-footer-space, #proj-footer-space, #about-footer-space{
     position: absolute;
     top: 130vh;
     height: 10vh;
@@ -918,5 +928,8 @@ body{
   }
   #proj-footer-space{
     top: 212vh;
+  }
+  #about-footer-space{
+    top: 95vh;
   }
 }
