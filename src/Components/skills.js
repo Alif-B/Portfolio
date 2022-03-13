@@ -141,7 +141,7 @@ class Skills extends Component {
                     </ChipContact> Putty&nbsp;&nbsp;&nbsp;
                     </Chip>
                     <Chip className='devops-chip' style={chip}><ChipContact>
-                        <img alt='logo' class="mdl-chip__contact" src='/Skills/Git.png'/>
+                        <img alt='logo' class="mdl-chip__contact" src='/Skills/Git.jpg'/>
                     </ChipContact> GitHub&nbsp;&nbsp;&nbsp;
                     </Chip>
                     <Chip className='dev-chip' style={chip}><ChipContact>
